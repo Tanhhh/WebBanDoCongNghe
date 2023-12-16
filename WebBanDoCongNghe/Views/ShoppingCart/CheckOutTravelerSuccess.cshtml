@@ -1,0 +1,156 @@
+﻿<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Giỏ hàng</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Thanh toán</a></li>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="check-icon">
+                        <span>&#10004;</span>
+                    </div>
+                    <br />
+                    <h4 class="font-weight-bold">Đặt hàng thành công</h4>
+
+                    @if (ViewBag.LatestOrder != null && ViewBag.OrderDetails != null)
+                    {
+                        <a style="font-weight:600;font-size:15px">Mã đơn hàng là: @ViewBag.LatestOrder.MaDonHang</a>
+                        <div id="orderDetails" style="display: none;" class="mt-4">
+                            <h4 style="text-align:left; font-size:22px" class="font-weight-bold">Thông tin khách hàng</h4>
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" style="width:150px">Họ tên</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Số điện thoại</th>
+                                        @if (!string.IsNullOrEmpty(ViewBag.LatestOrder.PhoneNumber2))
+                                        {
+                                            <th scope="col">Số điện thoại phụ</th>
+                                        }
+                                        <th scope="col">Địa chỉ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>@ViewBag.LatestOrder.HoTen</td>
+                                        <td>@ViewBag.LatestOrder.Email</td>
+                                        <td>@ViewBag.LatestOrder.PhoneNumber1</td>
+                                        @if (!string.IsNullOrEmpty(ViewBag.LatestOrder.PhoneNumber2))
+                                        {
+                                            <td>@ViewBag.LatestOrder.PhoneNumber2</td>
+                                        }
+                                        <td>@ViewBag.LatestOrder.Address</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h4 style="text-align:left; font-size:22px" class="font-weight-bold">Thông tin đơn hàng</h4>
+
+                            <table class="table table-bordered table-hover mt-4">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Tên sản phẩm</th>
+                                        <th scope="col">Ảnh</th>
+                                        <th scope="col">Số lượng</th>
+                                        <th scope="col">Giá tiền</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in ViewBag.OrderDetails)
+                                    {
+                                        <tr>
+                                            <td>@item.tb_Product.TenSanPham</td>
+                                            <td>
+                                                <img src="@item.tb_Product.ImageProduct" style="max-width: 100px; max-height: 100px;" class="img-fluid" />
+                                            </td>
+                                            <td>@item.Quantity</td>
+                                            <td>@String.Format("{0:0,0}", item.Price) VND</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                                @if (ViewBag.LatestOrder.TotalPayment > 30000000)
+                                {
+                                    <tr class="total-row">
+                                        <td colspan="4" style="text-align: right">Phí ship: 0 VND</td>
+                                    </tr>
+                                }
+                                else
+                                {
+                                    <tr class="total-row">
+                                        <td colspan="4" style="text-align: right">Phí ship: @String.Format("{0:0,0}", 50000) VND</td>
+                                    </tr>
+                                }
+                                <tr class="total-row">
+                                    <td colspan="4" style="text-align: right">Phương thức thanh toán: @ViewBag.LatestOrder.tb_PhuongThucThanhToan.TenPhuongThucThanhToan</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td colspan="4" style="text-align: right">Tổng tiền: @String.Format("{0:0,0}", ViewBag.LatestOrder.TotalPayment) VND</td>
+                                </tr>
+                                <tr class="date-row" style="text-align: right">
+                                    <td colspan="4" style="text-align: right">Ngày đặt: @string.Format("{0:dd/MM/yyyy h:mm:ss tt}", ViewBag.LatestOrder.CreateDate)</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="row justify-content-center align-items-center" style="margin-top:10px">
+                            <div class="col-md-6 text-right">
+                                <button class="btn btn-info" id="btnViewOrderDetails">Chi tiết đơn hàng</button>
+                            </div>
+                            <div class="col-md-6 text-left">
+                                <button class="btn btn-success" id="btnContinueShopping">Tiếp tục mua sắm</button>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Không có thông tin đơn hàng để hiển thị.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .check-icon {
+        width: 60px;
+        height: 60px;
+        background-color: rgb(96, 194, 15);
+        border-radius: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .check-icon span {
+            font-size: 2rem;
+            color: white;
+        }
+
+    .total-row {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .date-row {
+        font-weight: bold;
+        font-size: 17px;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        // Show order details when the "View Order Details" button is clicked
+        $("#btnViewOrderDetails").click(function () {
+            $("#orderDetails").toggle();
+        });
+
+        // Redirect to the product page when the "Continue Shopping" button is clicked
+        $("#btnContinueShopping").click(function () {
+            window.location.href = '/san-pham';
+        });
+    });
+</script>

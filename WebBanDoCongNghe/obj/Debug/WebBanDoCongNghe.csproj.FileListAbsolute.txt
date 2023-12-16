@@ -1,0 +1,1153 @@
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll.config
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.pdb
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe.config
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.rsp
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe.config
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.rsp
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.AppContext.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Collections.Immutable.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Console.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Globalization.Calendars.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Http.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Sockets.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Reflection.Metadata.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.ValueTuple.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe.config
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.rsp
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe.config
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.Web.Infrastructure.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebGrease.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.pdb
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CoreCompileInputs.cache
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CopyComplete
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.pdb
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.AssemblyReference.cache
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll.config
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.pdb
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe.config
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.rsp
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe.config
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.rsp
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Managed.Core.targets
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.AppContext.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Collections.Immutable.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Console.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Globalization.Calendars.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Http.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Sockets.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Reflection.Metadata.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.ValueTuple.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XmlDocument.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe.config
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.rsp
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe.config
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.Web.Infrastructure.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebGrease.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.xml
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.xml
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.xml
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.xml
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.xml
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.xml
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.xml
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.xml
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.xml
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.xml
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.pdb
+D:\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CoreCompileInputs.cache
+D:\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CopyComplete
+D:\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.dll
+D:\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.pdb
+D:\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.AssemblyReference.cache
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll.config
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.pdb
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe.config
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.rsp
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe.config
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.rsp
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.AppContext.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Collections.Immutable.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Console.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Globalization.Calendars.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Http.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Sockets.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Reflection.Metadata.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.ValueTuple.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe.config
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.rsp
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe.config
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.Web.Infrastructure.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebGrease.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.pdb
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CoreCompileInputs.cache
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CopyComplete
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.dll
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.pdb
+D:\ThuongMaiDienTu\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.AssemblyReference.cache
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll.config
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.pdb
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe.config
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.rsp
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe.config
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.rsp
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.AppContext.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Collections.Immutable.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Console.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Globalization.Calendars.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Http.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Sockets.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Reflection.Metadata.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.ValueTuple.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe.config
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.rsp
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe.config
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.Web.Infrastructure.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebGrease.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.xml
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.xml
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.xml
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.xml
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.xml
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.xml
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.xml
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.xml
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.xml
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.xml
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.xml
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.xml
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.pdb
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CoreCompileInputs.cache
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CopyComplete
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.pdb
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.dll
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.pdb
+D:\Thương mại điện tử\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.AssemblyReference.cache
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll.config
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.pdb
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe.config
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.rsp
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe.config
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.rsp
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.AppContext.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Console.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Http.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.ValueTuple.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe.config
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.rsp
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebGrease.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.pdb
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.xml
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.xml
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.xml
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.xml
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.xml
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.xml
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.xml
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.xml
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.xml
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.xml
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.xml
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.pdb
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.AssemblyReference.cache
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CoreCompileInputs.cache
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CopyComplete
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.dll
+C:\Users\ACER\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.pdb
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll.config
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.pdb
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe.config
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.rsp
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe.config
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.rsp
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.AppContext.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Console.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Http.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.ValueTuple.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe.config
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.rsp
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebGrease.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.pdb
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.xml
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.xml
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.xml
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.xml
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.xml
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.xml
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.xml
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.xml
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.xml
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CopyComplete
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.dll
+C:\Users\Admin\OneDrive\Máy tính\File cơ bản\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.pdb
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll.config
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.pdb
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe.config
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.rsp
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe.config
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.rsp
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.AppContext.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Console.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Http.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.ValueTuple.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe.config
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.rsp
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebGrease.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.pdb
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.xml
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.xml
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.xml
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.xml
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.xml
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.xml
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.xml
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.xml
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.xml
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.xml
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.xml
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.pdb
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CoreCompileInputs.cache
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CopyComplete
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.dll
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.pdb
+C:\Users\ACER\OneDrive\Máy tính\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.AssemblyReference.cache
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll.config
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.pdb
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe.config
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.rsp
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe.config
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.rsp
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.AppContext.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Console.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Http.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Sockets.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.ValueTuple.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe.config
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.rsp
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebGrease.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.pdb
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.xml
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.xml
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.xml
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.xml
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.xml
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.xml
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.xml
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.xml
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.xml
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.xml
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.xml
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.pdb
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.AssemblyReference.cache
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CoreCompileInputs.cache
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.dll
+C:\Users\kiet\Desktop\university\Đại học\năm 4\đồ án thương mại\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.pdb
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll.config
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.pdb
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe.config
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.rsp
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe.config
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.rsp
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.AppContext.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Console.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Http.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.ValueTuple.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe.config
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.rsp
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebGrease.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.pdb
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.xml
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.xml
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.xml
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.xml
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.xml
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.xml
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.xml
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.xml
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.xml
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.xml
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.xml
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.pdb
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.AssemblyReference.cache
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CoreCompileInputs.cache
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CopyComplete
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.dll
+C:\Users\ACER\OneDrive\Tài liệu\Demo_1\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.rsp
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.rsp
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.AppContext.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Console.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Http.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.ValueTuple.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.rsp
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebGrease.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CopyComplete
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.rsp
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.rsp
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.AppContext.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Console.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Http.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.ValueTuple.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.rsp
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebGrease.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CopyComplete
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\MoreLinq.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\MoreLinq.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\MoreLinq.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\PayPal.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\Fix\WebBanDoCongNghe\WebBanDoCongNghe\bin\PayPal.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll.config
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.pdb
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe.config
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.rsp
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe.config
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.rsp
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.AppContext.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Console.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Http.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.ValueTuple.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe.config
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.rsp
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\MoreLinq.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\PayPal.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebGrease.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.pdb
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\MoreLinq.pdb
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\MoreLinq.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\PayPal.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.pdb
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.AssemblyReference.cache
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CopyComplete
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.dll
+C:\Users\ACER\Downloads\TMDT\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebBanDoCongNghe.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.exe.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csc.rsp
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.exe.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\csi.rsp
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.AppContext.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Console.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Http.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.ValueTuple.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.exe.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\vbc.rsp
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\MoreLinq.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\PayPal.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\WebGrease.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\CKFinder.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\MoreLinq.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\MoreLinq.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\PagedList.Mvc.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\PayPal.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Helpers.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Mvc.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Optimization.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.Razor.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\Newtonsoft.Json.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.csproj.CopyComplete
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.dll
+C:\Users\Admin\OneDrive\Máy tính\Demo_ChuaSua\ElectroShop\WebBanDoCongNghe\WebBanDoCongNghe\obj\Debug\WebBanDoCongNghe.pdb

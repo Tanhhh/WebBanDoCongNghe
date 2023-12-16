@@ -1,0 +1,220 @@
+﻿@model WebBanDoCongNghe.Models.tb_Contact
+@{
+    ViewBag.Title = "EditContactCustomer";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var userInfo = Session["admin"] as WebBanDoCongNghe.Models.tb_NhanVien;
+
+}
+
+@section naviheader{
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/Admin/Home/Index" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/Admin/ContactCustomer/IndexContactCustomer" class="nav-link">Danh sách liên hệ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Cập nhật</a>
+        </li>
+    </ul>
+}
+@if (!string.IsNullOrEmpty(TempData["ErrorMessage"] as string))
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Cập nhật liên hệ    </h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/Admin/ContactCustomer/IndexContactCustomer">Danh sách liên hệ</a></li>
+                    <li class="breadcrumb-item active">Cập nhật</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+    <!-- Default box -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-default">
+                <div class="card-header">
+                    <h3 class="card-title">Thông tin liên hệ</h3>
+                </div>
+
+                <div class="card-body">
+
+                    @using (Html.BeginForm("EditContactCustomer", "ContactCustomer", new { MaNhanVien = ViewBag.MaNhanVien }, FormMethod.Post, new { }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+                        @Html.Hidden("MaNhanVien", userInfo.MaNhanVien)
+
+                        <div style="display:none;">
+                            @Html.TextBoxFor(x => x.CreateDate, new { @class = "form-control" })
+                            @Html.TextBoxFor(x => x.NoiDung, new { @class = "form-control" })
+                            @Html.TextBoxFor(x => x.MaKH, new { @class = "form-control" })
+                            @Html.TextBoxFor(x => x.LyDo, new { @class = "form-control" })
+                            @Html.TextBoxFor(x => x.HoTen, new { @class = "form-control" })
+                            @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "form-control" })
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                            @Html.TextBoxFor(x => x.ContactID, new { @class = "form-control" })
+
+
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="TenBrand">Nhân viên đăng nhập</label>
+                                    <p class="form-control">@ViewBag.HoTenNhanVien</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="TenBrand">Xử lý liên hệ</label>
+                                    @Html.DropDownListFor(model => model.IsXuLy, new[] { new SelectListItem { Value = "true", Text = "Đã xử lý" }, new SelectListItem { Value = "false", Text = "Chưa xử lý" } }, new { @class = "form-control" })
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group text-right">
+                            <a href="/Admin/ContactCustomer/IndexContactCustomer" class="btn btn-danger">Quay lại</a>
+                            <button type="submit" class="btn btn-primary" onclick="updateConfirmation()">Cập nhật</button>
+                        </div>
+
+
+
+                    }
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+    </div>
+</section>
+
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Chi tiết liên hệ</h1>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Main content -->
+<section class="content">
+    <!-- Default box -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputFile">Tên khách hàng</label>
+                        <p class="form-control"><i class="fas fa-user-alt" style="margin-right:10px"></i>@Model.tb_Customer.HoTen</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="exampleInputFile">Số điện thoại</label>
+                            <p class="form-control"><i class="fas fa-phone" style="margin-right:10px"></i>@Model.tb_Customer.Phone</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="exampleInputFile">Email</label>
+                            <p class="form-control"><i class="fas fa-envelope" style="margin-right:10px"></i>@Model.tb_Customer.Email</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="exampleInputFile">Ngày liên hệ</label>
+                            <p class="form-control"><i class="fas fa-calendar-alt" style="margin-right:10px"></i>@String.Format("{0:dd/MM/yyyy - hh:mm:ss tt}", @Model.CreateDate)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+
+                        <div class="form-group">
+                            <label for="exampleInputFile">Lý do</label>
+                            <p class="form-control">
+                                <i style="margin-right:10px"></i>@Model.LyDo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="exampleInputFile">Nội dung</label>
+                            <p class="form-control" style="height:200px"><i style="margin-right:10px"></i>@Model.NoiDung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+<script>
+    function updateConfirmation() {
+        if (confirm('Bạn có chắc với cập nhật của mình không?')) {
+            alert('Cập nhật thành công!');
+            location.href = '/Admin/ContactCustomer/EditContactCustomer?id=@Model.ContactID';
+        } else {
+            // Người dùng đã chọn "Cancel"
+            alert('Cập nhật đã bị hủy.');
+        }
+    }
+</script>
+
+

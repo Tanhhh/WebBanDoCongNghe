@@ -1,0 +1,61 @@
+﻿@model PagedList.PagedList<WebBanDoCongNghe.Models.tb_Order>
+@using PagedList.Mvc;
+
+<div class="card-body">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="text-center">STT</th>
+                <th class="text-center">Mã đơn hàng</th>
+                <th class="text-center">Tài khoản</th>
+                <th class="text-center">Tổng tiền</th>
+                <th class="text-center">Phương thức</th>
+                <th class="text-center">Thanh toán</th>
+                <th class="text-center">Nhân viên xử lý</th>
+                <th class="text-center">Công cụ</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                var i = 1;
+                foreach (var item in Model)
+                {
+                    var thanhtoanCheck = item.IsThanhToan == true ? "<a><i class='fa fa-check text-success'></i></a>" : "<a><i class='fas fa-times text-danger'></i></a>";
+                    <tr>
+                        <td class="text-center">@i</td>
+                        <td class="text-center">@item.MaDonHang</td>
+                        <td class="text-center">@item.tb_Customer.TaiKhoan</td>
+                        <td class="text-center">@String.Format("{0:0,0}", @item.TotalPayment) VDN</td>
+                        <td class="text-center">@item.tb_PhuongThucThanhToan.TenPhuongThucThanhToan</td>
+                        <td class="text-center">@Html.Raw(thanhtoanCheck)</td>
+                        <td class="text-center">@item.tb_NhanVien.TenNhanVien</td>
+                        <td class="text-center">
+                            <a href="/Admin/OrderCustomer/EditOrderCustomer/@item.MaDonHang" class="btn btn-sm btn-primary">Cập nhật</a>
+                        </td>
+                    </tr>
+                    i++;
+                }
+
+            }
+            else
+            {
+                <tr>
+                    <td colspan="12">Không có đơn hàng nào!</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
+@*tạo link liên kết phân trang*@
+<div id="phantrang">
+    <div>
+        Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+    </div>
+    <div id="phantrang-SoThuTu">
+        @Html.PagedListPager(Model, page => Url.Action("IndexOrderCustomer", new { page = page }))
+    </div>
+</div>
+
+

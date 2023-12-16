@@ -1,0 +1,109 @@
+﻿@model WebBanDoCongNghe.Models.tb_Order
+@{
+    ViewBag.Title = "OrderUserDetail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Chi tiết đơn đặt hàng</a></li>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-3">
+                            <label for="exampleInputFile">Mã đơn hàng</label>
+                            <p>@Model.MaDonHang</p>
+                        </td>
+                        <td class="col-md-4">
+                            <label for="exampleInputFile">Tên khách hàng</label>
+                            <p>@Model.tb_Customer.HoTen</p>
+                        </td>
+                        <td class="col-md-5">
+                            <label for="exampleInputFile">Số điện thoại</label>
+                            <p>@Model.tb_Customer.Phone</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-3">
+                            <label for="exampleInputFile">Thời gian đặt hàng</label>
+                            <p>@String.Format("{0:dd/MM/yyyy - hh:mm:ss tt}", @Model.CreateDate)</p>
+                        </td>
+                        <td class="col-md-4">
+                            <label for="exampleInputFile">Email</label>
+                            <p>@Model.tb_Customer.Email</p>
+                        </td>
+                        <td class="col-md-5">
+                            <label for="exampleInputFile">Địa chỉ</label>
+                            <p>@Model.tb_Customer.Address</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        @if (Model.CustomerCodeID != null)
+                        {
+                            <td class="col-md-3">
+                                <label for="exampleInputFile">Mã giảm giá</label>
+                                <p>@String.Format("{0:0,0}", ViewBag.GiamGia) VND</p>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="col-md-3">
+                                <label for="exampleInputFile">Mã giảm giá</label>
+                                <p>Không</p>
+                            </td>
+                        }
+                        <td class="col-md-4">
+                            <label for="exampleInputFile">Tổng tiền</label>
+                            <p>@String.Format("{0:0,0}", @Model.TotalPayment) VDN</p>
+                        </td>
+                        <td class="col-md-5">
+                            <label for="exampleInputFile">Phương thức thanh toán</label>
+                            <p>@Model.tb_PhuongThucThanhToan.TenPhuongThucThanhToan</p>
+                        </td>
+                        
+                    </tr>
+              
+                    <tr>
+                        @if (Model.GhiChu != null)
+                        {
+                            <td colspan="2">
+                                <label for="exampleInputFile">Ghi chú</label>
+                                <p>@Model.GhiChu</p>
+                            </td>
+                        }
+                        @if (Model.MaPhuongThucThanhToan == 6)
+                        {
+                            <td>
+                                @Html.Action("Partial_SoTaiKhoan", "OrderUser")
+                            </td>
+                        }
+                        @if (Model.LyDoHuyDon != null)
+                        {
+                            <td colspan="2">
+                                <label for="exampleInputFile">Lý do hủy đơn</label>
+                                <p>@Model.LyDoHuyDon</p>
+                            </td>
+                        }
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Danh sách sản phẩm</h3>
+        </div>
+        @Html.Action("Partial_OrderUserDetail", "OrderUser")
+    </div>
+</div>
+
+

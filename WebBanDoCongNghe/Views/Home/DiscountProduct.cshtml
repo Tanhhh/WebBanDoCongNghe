@@ -1,0 +1,84 @@
+﻿@model IEnumerable<WebBanDoCongNghe.Models.tb_Product>
+
+
+@if (Model != null && Model.Any())
+{
+
+    foreach (var item in Model)
+    {
+        var strImage = "";
+        var image = item.tb_ProductImages.FirstOrDefault(n => n.IsDefault == true);
+        if (image != null)
+        {
+            strImage = image.Image;
+        }
+        <div class="owl-item product_slider_item">
+            <div class="product-item">
+                <div class="product discount">
+                    @if (item.Quantity > 0)
+                    {
+                        <div class="product_image" style="min-height:240px;">
+                            <a href="/chi-tiet/@item.Link-p@(item.MaSanPham)"><img style="width:100%;" src="@strImage" alt="@item.TenSanPham"></a>
+                        </div>
+                        if (item.IsSale == true)
+                        {
+                            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>Sale</span></div>
+                        }
+                        <div class="product_info">
+                            <h6 class="product_name"><a href="/chi-tiet/@item.Link-p@(item.MaSanPham)">@item.TenSanPham</a></h6>
+                            @if (item.IsSale == true)
+                            {
+                                <div class="product_price">@String.Format("{0:0,0}", @item.PriceSale)VND<span>@String.Format("{0:0,0}", @item.Price)</span></div>
+                            }
+                            @if (item.IsSale == false || item.IsSale == null)
+                            {
+                                <div class="product_price">@String.Format("{0:0,0}", @item.Price)</div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+
+                        <div class="product-item out-of-stock">
+                            <div class="product discount product_filter">
+                                <div style="min-height:240px;" class="product_image">
+                                    <a href="/chi-tiet/@item.Link-p@(item.MaSanPham)"><img src="@strImage" alt="@item.TenSanPham"></a>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_name"><a href="/chi-tiet/@item.Link-p@(item.MaSanPham)">@item.TenSanPham</a></h6>
+                                   
+                                    <div class="product_price out_of_stock">HẾT HÀNG</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+}
+<style>
+    .out-of-stock {
+        opacity: 0.6; /* Làm mờ sản phẩm hết hàng */
+    }
+
+    .out-of-stock-image {
+        filter: grayscale(100%) blur(1px); /* Chuyển ảnh sang trắng đen và thêm hiệu ứng mờ */
+        transition: filter 0.3s ease;
+    }
+
+    .out-of-stock-name {
+        color: #888; /* Màu chữ cho sản phẩm hết hàng */
+    }
+
+    .out-of-stock-link {
+        color: #888; /* Màu chữ cho link sản phẩm hết hàng */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .out-of-stock-link:hover {
+            color: #666; /* Màu chữ khi di chuột qua link */
+        }
+</style>

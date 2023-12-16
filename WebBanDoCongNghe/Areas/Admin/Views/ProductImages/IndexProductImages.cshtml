@@ -1,0 +1,103 @@
+﻿@model IEnumerable<WebBanDoCongNghe.Models.tb_ProductImages>
+@{
+    ViewBag.Title = "IndexProductImages";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutDialog.cshtml";
+}
+<style>
+ .IndexProductImages_image {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+}
+ .IndexProductImages_image > li {
+        display: inline-block;
+        padding: 20px;         
+}
+ .IndexProductImages_image > li > img {
+        width: 200px;
+        padding-bottom: 10px;                
+}        
+</style>
+<section class="content">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">Ảnh sản phẩm</h2>
+            <div class="card-tools">
+                <input type="button" class="btn btn-primary" id="TaiAnh" onclick="BrowseSever()" value="Thêm ảnh" />
+            </div>
+        </div>
+        <div class="card-body">
+            <ul class="IndexProductImages_image">
+                @if (Model != null)
+                {
+                    foreach (var item in Model)
+                    {
+                        <li id="trow_@item.MaImages">
+                            <img src="@item.Image" />
+                            <div class="box-btn text-center">
+
+                                <a href="#" data-id="@item.MaImages" class="btn btn-sm btn-danger btnDelete"><i class="fa fa-trash"></i></a>
+                                @if (item.IsDefault == true)
+                                {
+                                    <a href="#" data-id="@item.MaImages" class="btn btn-sm btn-success btnDefault"><i class="fa fa-check"></i></a>
+                                }
+                                @if (item.IsDefault == false || item.IsDefault == null)
+                                {
+                                    <a href="#" data-id="@item.MaImages" class="btn btn-sm btn-success btnDefault"><i class="fas fa-times"></i></a>
+                                }
+                            </div>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+</section>
+
+@section scripts{
+    <script>
+        function BrowseSever(field) {
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (fileUrl) {
+                AddProductImages(@ViewBag.MaSanPham,fileUrl);
+            };
+            finder.popup();
+        }
+        function AddProductImages(id, url) {
+            $.ajax({
+                url: '/admin/ProductImages/AddProductImages',
+                type: 'POST',
+                data: { MaSanPham: id,url:url},
+                success: function (rs) {
+                    if (rs.success) {
+                        window.location.reload();
+                    }
+                }
+            });
+        }
+        $(document).ready(function () {
+            $('body').on('click', '.btnDelete', function () {
+                var id = $(this).data('id');
+                var conf = confirm('Bạn có muốn xóa ảnh này không?');
+                if (conf == true)
+                {
+                    $.ajax({
+                        url: '/admin/ProductImages/DeleteProductImages',
+                        type: 'POST',
+                        data: { id: id },
+                        success: function (rs)
+                        {
+                            if (rs.success)
+                            {
+                                $('#trow_'+ id).remove();
+                                window.location.reload();
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}
+

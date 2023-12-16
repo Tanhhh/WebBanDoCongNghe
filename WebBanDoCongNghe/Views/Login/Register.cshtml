@@ -1,0 +1,101 @@
+﻿@model WebBanDoCongNghe.Models.tb_Customer
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="@Url.Action("IndexHome", "Home")">Trang chủ</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Đăng ký</a></li>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="row">
+                <div class="col-md-8 text-center">
+                    <h4>Đăng ký</h4>
+                    @if (!string.IsNullOrEmpty(TempData["PasswordMismatch"] as string))
+                    {
+                        <span class="field-validation-error">@TempData["PasswordMismatch"]</span>
+                    }
+                    else if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+                    }
+                    else if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+                    }
+                    else
+                    {
+                        <span class="field-validation-error">@Html.ValidationMessage("ReMatKhau")</span>
+                    }
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    @using (Html.BeginForm("Register", "Login", FormMethod.Post, new { }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+                        <div class="form-group">
+                            <label for="">Tài khoản</label>
+                            @Html.TextBoxFor(x => x.TaiKhoan, new { @class = "form-control", placeholder = "Nhập tài khoản" })
+                            <span class="field-validation-error">@Html.ValidationMessageFor(x => x.TaiKhoan)</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Mật khẩu</label>
+                            @Html.PasswordFor(x => x.MatKhau, new { @class = "form-control", placeholder = "Nhập mật khẩu" })
+                            <span class="field-validation-error">@Html.ValidationMessageFor(x => x.MatKhau)</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nhập lại mật khẩu</label>
+                            @Html.Password("ReMatKhau", null, new { @class = "form-control", placeholder = "Nhập lại mật khẩu" })
+                        </div>
+                        <div class="form-group">
+                            <label for="">Tên khách hàng</label>
+                            @Html.TextBoxFor(x => x.HoTen, new { @class = "form-control", placeholder = "Nhập họ và tên" })
+                            <span class="field-validation-error">@Html.ValidationMessageFor(x => x.HoTen)</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số điện thoại</label>
+                            @Html.TextBoxFor(x => x.Phone, new { @class = "form-control", placeholder = "Nhập số điện thoại" })
+                            <span class="field-validation-error">@Html.ValidationMessageFor(x => x.Phone)</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control", placeholder = "Nhập email" })
+                            <span class="field-validation-error">@Html.ValidationMessageFor(x => x.Email)</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Địa chỉ (Số nhà, Tên đường, Phường, Quận, Thành phố)</label>
+                            @Html.TextBoxFor(x => x.Address, new { @class = "form-control", placeholder = "Nhập địa chỉ" })
+                            <span class="field-validation-error">@Html.ValidationMessageFor(x => x.Address)</span>
+                        </div>
+                        <div class="col text-center ">
+                            <input style="margin-top:25px;" type="submit" value="Đăng ký" class="btn btn-success">
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* Màu mặc định cho chữ trong các ô textbox */
+    input[type="text"], input[type="password"] {
+        color: black !important;
+    }
+
+    /* Màu cho chữ thông báo lỗi */
+    .field-validation-error {
+        color: red;
+    }
+</style>

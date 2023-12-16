@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a5b791ed2be6447a8e4a3d3c194f21da" Name="Diagram1" ZoomLevel="68">
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_Brand" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_Category" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_ChiTietOrder" Width="1.5" PointX="5.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_ChiTietOrder_Traveler" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_ChucNang" Width="1.5" PointX="7.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_Color" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_Customer" Width="1.5" PointX="0.75" PointY="25.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_DiscountCode" Width="1.5" PointX="11.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_Memory" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_NhanVien" Width="1.5" PointX="7.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_Order" Width="1.5" PointX="8.5" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_PhanQuyen" Width="1.5" PointX="10" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_PhuongThucThanhToan" Width="1.5" PointX="0.75" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_Product" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_ProductCategory" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_ProductImages" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_TaiKhoanNganHang" Width="1.5" PointX="9.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_Traveler" Width="1.5" PointX="3" PointY="19.625" IsExpanded="true" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_Product_tb_Brand" ManuallyRouted="false" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_ChiTietOrder_tb_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_ChiTietOrder_tb_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_ChiTietOrder_Traveler_tb_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_ChiTietOrder_Traveler_tb_Traveler" ManuallyRouted="false" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_PhanQuyen_tb_ChucNang" ManuallyRouted="false" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_Product_tb_Color1" ManuallyRouted="false" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_Order_tb_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_Product_tb_Memory" ManuallyRouted="false" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_PhanQuyen_tb_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_Order_tb_PhuongThucThanhToan" ManuallyRouted="false" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_Traveler_tb_PhuongThucThanhToan" ManuallyRouted="false" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_Product_tb_ProductCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_ProductImages_tb_Product1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.sysdiagram" Width="1.5" PointX="10.375" PointY="11.75" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_Contact" Width="1.5" PointX="10" PointY="16.875" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK__tb_Contac__MaNha__70DDC3D8" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK__tb_Contact__MaKH__6FE99F9F" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_Order_tb_Nhanvien" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_Traveler_tb_Nhanvien" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_FavoriteProduct" Width="1.5" PointX="5.25" PointY="15" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK__tb_Favorit__MaKH__04E4BC85" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK__tb_Favori__MaSan__05D8E0BE" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_TichDiem" Width="1.5" PointX="4.625" PointY="32.25" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_TichDiem_tb_Customer" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_TichDiem_tb_Order" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_TichDiem_tb_DiscountCode" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_CustomerCode" Width="1.5" PointX="14" PointY="29" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_CustomerCode_tb_Customer" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_Order_CustomerCode" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK_tb_CustomerCode_tb_DiscountCode" />
+        <EntityTypeShape EntityType="DBQuanLyBanDoCongNgheModel.tb_ProductReview" Width="1.5" PointX="5.25" PointY="17.875" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK__tb_Product__MaKH__1AD3FDA4" />
+        <AssociationConnector Association="DBQuanLyBanDoCongNgheModel.FK__tb_Produc__MaSan__19DFD96B" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

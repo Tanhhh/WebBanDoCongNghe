@@ -1,0 +1,120 @@
+﻿
+@{
+    ViewBag.Title = "Thống kê";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section naviheader{
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Thống kê</a>
+        </li>
+    </ul>
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Quản lý website</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item active">@ViewBag.Title</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+<!-- Default box -->
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-12">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-file-invoice-dollar"></i></span>
+                        <div class="info-box-content">
+                            <span class="info-box-text">Tổng doanh thu </span>
+                            <span class="info-box-number">
+                                @String.Format("{0:0,0}", @ViewBag.tongDoanhThuCustomer + ViewBag.tongDoanhThuTraveler)
+                                <small>VND</small>
+                            </span>
+                        </div>
+                        <!-- /.info-box-content -->
+                    </div>
+                    <!-- /.info-box -->
+                </div>
+                <!--<div class="col-12 col-sm-6 col-md-6">
+                    <div class="info-box">
+                        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-file-invoice-dollar"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Doanh thu khách vãng lai</span>
+                            <span class="info-box-number">
+                                @String.Format("{0:0,0}", @ViewBag.tongDoanhThuTraveler)
+                                <small>VND</small>
+                            </span>
+                        </div>-->
+                        <!-- /.info-box-content -->
+                    <!--</div>-->
+                    <!-- /.info-box -->
+                <!--</div>-->
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="info-box mb-3">
+                        <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-user"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Khách hàng thành viên</span>
+                            <span class="info-box-number">@ViewBag.SoLuongKhachHang</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix hidden-md-up"></div>
+
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="info-box mb-3">
+                        <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Đơn hàng mới</span>
+                            <span class="info-box-number">@ViewBag.SoDonHang</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="info-box mb-3">
+                        <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-street-view"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Số lượng khách ghé thăm</span>
+                            <span class="info-box-number">@ViewBag.SoNguoiGheTham</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="info-box mb-3">
+                        <span class="info-box-icon bg-warning elevation-1"><i class="far fa-eye"></i></span>
+
+                        <div class="info-box-content">
+                            <span class="info-box-text">Số lượng khách trực tuyến</span>
+                            <span class="info-box-number">@ViewBag.SoNguoiOnline</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="card-footer">
+            </div>
+            <!-- /.card-footer-->
+        </div>
+    <!-- /.card -->
+
+</section>
+<!-- /.content -->

@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "IndexShoppingCart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="@Url.Action("IndexHome", "Home")">Trang chủ</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Giỏ Hàng</a></li>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="row">
+                @if (ViewBag.Error != null)
+                {
+                    <div class="col-md-12 text-center">
+                        <div class="alert alert-danger">
+                            @Html.Raw(ViewBag.Error)
+                            <br />
+                            <a href="/san-pham" class="btn btn-sm btn-primary">Quay lại trang sản phẩm</a>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="col-md-12" id="load_data">
+                        @Html.Action("Partial_Item_Cart", "ShoppingCart")
+                    </div>
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            @if (Session["MaKH"] != null && ViewBag.CartNotEmpty)
+                            {
+
+                                <a href="/thanh-toan-user" class="btn btn-success">Thanh toán</a>
+
+                            }
+                            else if (ViewBag.CartNotEmpty)
+                            {
+                                <a href="/thanh-toan" class="btn btn-success">Thanh toán</a>
+                            }
+                            else
+                            {
+                                <div class="alert alert-info">
+                                    Không có sản phẩm trong giỏ hàng! Bạn vui lòng quay lại trang sản phẩm để mua hàng.
+                                    <br />
+                                    <a href="/san-pham" class="btn btn-sm btn-primary">Quay lại trang sản phẩm</a>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

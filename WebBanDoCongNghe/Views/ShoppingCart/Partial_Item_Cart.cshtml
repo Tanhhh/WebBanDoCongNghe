@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WebBanDoCongNghe.Models.ShoppingCartItem>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="text-center">STT</th>
+            <th class="text-center">Ảnh sản phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th class="text-center">Giá tiền</th>
+            <th class="text-center">Số lượng</th>
+            <th class="text-center">Thành tiền</th>
+            <th class="text-center">Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            var i = 1;
+            decimal TongTien = 0;
+            foreach (var item in Model)
+            {
+                TongTien = TongTien + item.iTongGia;
+                <tr id="trow">
+                    <td class="text-center">@i</td>
+                    <td class="text-center">
+                        <a href="/chi-tiet/@item.iLink-p@(item.iMaSanPham)">
+                            <img style="height:80px;" src="@item.iHinhAnh" alt="@item.iTenSanPham">
+                        </a>
+                    </td>
+                    <td>
+                        <a class="text-dark" href="/chi-tiet/@item.iLink-p@(item.iMaSanPham)">@item.iTenSanPham</a>
+                    </td>
+                    <td class="text-center">@String.Format("{0:0,0}", item.iGiaSanPham) VND</td>
+                    <td class="text-center">
+                        <input style="border: 1px solid #CCCCCC; border-radius: 5px; text-align: center" id="Quantity_@item.iMaSanPham" max="100" min="1" type="number" value="@item.iSoLuong">
+                    </td>
+                    <td class="text-center">@String.Format("{0:0,0}", item.iTongGia) VND</td>
+                    <td class="text-center">
+                        <a href="#" data-id="@item.iMaSanPham" class="btn btn-sm btn-success btnUpdate">Cập nhật</a>
+                        <a href="#" data-id="@item.iMaSanPham" class="btn btn-sm btn-danger btnDelete">Xóa</a>
+                    </td>
+                </tr>
+                i++;
+            }
+            <tr>
+                @if (Session["MaKH"] != null)
+                {
+                    using (Html.BeginForm("MaGiamGia", "ShoppingCart", FormMethod.Post, new { id = "discountForm" }))
+                    {
+                        <td colspan="4">
+                            Mã giảm giá:
+                            <input style="border: 1px solid #CCCCCC;border-radius:5px" type="text" name="txtMaGiamGia" />
+                            <input type="submit" value="Áp dụng" class="btn btn-primary btnDiscount">
+                          
+                        </td>
+
+                    }
+
+                }
+
+                else
+                {
+                    <td colspan="4"></td>
+                }
+                <th colspan="7" class="text-center">Tổng tiền: @String.Format("{0:0,0}", TongTien) VND</th>
+            </tr>
+        }
+        else
+        {
+            <tr>
+                <td colspan="7"></td>
+            </tr>
+        }
+    </tbody>
+</table>

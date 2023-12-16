@@ -1,0 +1,115 @@
+﻿@model PagedList.PagedList<WebBanDoCongNghe.Models.tb_Order>
+@using PagedList.Mvc;
+
+<div class="col-sm-12 text-right">
+    <a href="#" class="btn btn-danger" id="btnDeleteAll1">Xóa đơn hàng</a>
+</div>
+<div class="card-body">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="SelectAll" /></th>
+                <th class="text-center">STT</th>
+                <th class="text-center">Mã đơn hàng</th>
+                <th class="text-center">Tài khoản</th>
+                <th class="text-center">Tổng tiền</th>
+                <th class="text-center">Lý do hủy</th>
+                <th class="text-center">Người hủy</th>
+                <th class="text-center">Chi tiết</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                var i = 1;
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td><input type="checkbox" class="cbkItem" value="@item.MaDonHang" /></td>
+                        <td class="text-center">@i</td>
+                        <td class="text-center">@item.MaDonHang</td>
+                        <td class="text-center">@item.tb_Customer.TaiKhoan</td>
+                        <td class="text-center">@String.Format("{0:0,0}", @item.TotalPayment) VDN</td>
+                        <td class="text-center">@item.LyDoHuyDon</td>
+
+                        @if (item.MaNhanVien != null)
+                        {
+                            <td class="text-center">Nhân viên: @item.tb_NhanVien.TenNhanVien</td>
+
+                        }
+                        else
+                        {
+                            <td class="text-center">Khách hàng</td>
+
+                        }
+                        <td class="text-center">
+                            <a href="/Admin/OrderCustomer/OrderCustomerDetail/@item.MaDonHang" class="btn btn-sm btn-primary">Xem</a>
+                        </td>
+                    </tr>
+                    i++;
+                }
+
+            }
+            else
+            {
+                <tr>
+                    <td colspan="12">Không có đơn hàng nào!</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
+@*tạo link liên kết phân trang*@
+<div id="phantrang">
+    <div>
+        Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+    </div>
+    <div id="phantrang-SoThuTu">
+        @Html.PagedListPager(Model, page => Url.Action("IndexOrderCustomer", new { page = page }))
+    </div>
+</div>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        // Xóa đơn hàng
+        $('#btnDeleteAll1').on('click', function () {
+            var selectedItems = $('.cbkItem:checked');
+            if (selectedItems.length > 0) {
+                var ids = selectedItems.map(function () {
+                    return this.value;
+                }).get().join(',');
+
+                $.ajax({
+                    url: '/Admin/OrderCustomer/DeleteAllProduct',
+                    type: 'POST',
+                    data: { ids: ids },
+                    success: function (data) {
+                        if (data.success) {
+                            // Nếu xóa thành công, làm mới trang
+                            alert('Xóa thành công!');
+
+                            location.reload();
+                        } else {
+                            alert('Xóa không thành công!');
+                        }
+                    },
+                    error: function () {
+                        alert('Đã có lỗi xảy ra!');
+                    }
+                });
+            } else {
+                alert('Chọn ít nhất một đơn hàng để xóa!');
+            }
+        });
+
+        // Chọn tất cả
+        $('#SelectAll').on('change', function () {
+            $('.cbkItem').prop('checked', $(this).prop('checked'));
+        });
+    });
+</script>
+

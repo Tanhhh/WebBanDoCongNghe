@@ -1,0 +1,154 @@
+﻿@model WebBanDoCongNghe.Models.tb_Contact
+
+@{
+    ViewBag.Title = "Liên hệ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="@Url.Action("IndexHome", "Home")">Trang chủ</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Liên hệ</a></li>
+                </ul>
+            </div>
+            @if (TempData["SuccessMessage"] != null)
+            {
+
+                <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="font-weight:600; text-align: center;">
+                                <h5 class="modal-title w-100" id="successModalLabel">Thông báo</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <!-- Thêm class text-center ở đây -->
+                                @TempData["SuccessMessage"]
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trigger modal using JavaScript -->
+                <script>
+                    $(document).ready(function () {
+                        $('#successModal').modal('show');
+                    });
+                </script>
+            }
+
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="modal fade" id="failModal" tabindex="-1" role="dialog" aria-labelledby="failModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="font-weight:600; text-align: center;">
+                                <h5 class="modal-title w-100" id="successModalLabel">Thông báo</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-center">
+                                @TempData["ErrorMessage"]
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trigger modal using JavaScript -->
+                <script>
+                    $(document).ready(function () {
+                        $('#failModal').modal('show');
+                    });
+                </script>
+            }
+            @using (Html.BeginForm("Contact", "Contact", FormMethod.Post, new { @class = "form-horizontal", role = "form", onsubmit = "submitForm()" }))
+            {
+
+                @Html.AntiForgeryToken()
+
+
+
+                <div class="form-group">
+                    <label for="">Tên khách hàng</label>
+                    @Html.TextBoxFor(model => model.HoTen, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.HoTen)
+                </div>
+                <div class="form-group">
+
+                    <label for="">Số điện thoại</label>
+                    @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.PhoneNumber)
+
+                </div>
+                <div class="form-group">
+
+                    <label for="">Email</label>
+                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Email)
+
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="">Lý do liên hệ</label>
+                    @Html.TextBoxFor(model => model.LyDo, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.LyDo)
+                </div>
+
+                <div class="form-group">
+                    <label for="">Nội dung liên hệ</label>
+                    @Html.TextAreaFor(model => model.NoiDung, new { @class = "form-control", rows = 4 })
+                    @Html.ValidationMessageFor(model => model.NoiDung)
+                </div>
+
+
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Gửi</button>
+                </div>
+
+            }
+
+
+
+        </div>
+    </div>
+</div>
+<style>
+    .form-control {
+        color: black;
+    }
+
+    .field-validation-error {
+        color: red;
+    }
+</style>
+
+<script>
+    function submitForm() {
+        // Ẩn modal trước khi hiển thị (nếu có)
+        // Ẩn modal trước khi hiển thị (nếu có)
+        $('#successModal').modal('hide');
+        $('#failModal').modal('hide');
+
+        // Hiển thị modal thông báo
+        $('#successModal').modal('show');
+
+        // Trả về false để ngăn chặn việc submit form
+        return false;
+    }
+</script>

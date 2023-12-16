@@ -1,0 +1,310 @@
+﻿@model PagedList.PagedList<WebBanDoCongNghe.Models.tb_DiscountCode>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "IndexCustomerCode";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="@Url.Action("IndexHome", "Home")">Trang chủ</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Đổi Voucher</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="mt-4 d-flex justify-content-center">
+                @using (Html.BeginForm("RedeemDiscountCode", "CustomerDiscount", FormMethod.Post))
+                {
+
+
+
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <a class="font-weight-bold elegant-text" style="color: #007BFF">
+                                Danh sách Voucher <image src="~/Content/template-user/images/voucher.png" style="width:50px;padding-left:10px"></image>
+                            </a>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+
+                        <div class="col-md-12 text-center">
+
+                            <span class="total-points" id="tongDiem" data-tongdiem="@ViewBag.TongDiem">Điểm hiện tại: @ViewBag.TongDiem <img src="~/Content/template-user/images/star.png" style="width:25px" class="ml-2"></span>
+                        </div>
+                    </div>
+                    <br /> <br />
+
+                    <div class="voucher-container">
+
+                        <div class="row">
+                            @foreach (var discountCode in Model)
+                            {
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                                            <span class="icon"><image src="~/Content/template-user/images/giftbox.png" style="width:50px;padding-left:10px"></image></span>
+                                            <div class="title-container">
+                                                <h4 class="card-title font-weight-bold">@discountCode.TenDiscount</h4>
+                                            </div>
+                                            <h5 class="card-text font-weight-bold" style="color:red;padding-top:10px;font-size:20px"><span></span> <span id="diemCanDoi_@discountCode.DiscountCode">@discountCode.SoDiemCanDoi </span><image src="~/Content/template-user/images/star.png" style="width:25px"></image></h5>
+                                            <h5 class="card-text">Số lượng: @discountCode.Quantity</h5>
+                                            <h5 class="card-text">Trị giá: @String.Format("{0:0,0}", @discountCode.Value) VND</h5>
+                                            <p class="card-text">@discountCode.Description</p>
+
+
+
+                                            <button type="submit" class="btn btn-redeem" onclick="redeemDiscount('@discountCode.DiscountCode')">Đổi</button>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+
+                        <!-- Hiển thị thông tin mã voucher được chọn -->
+                        <div id="selectedDiscountInfo" style="margin-top: 20px;">
+                            <!-- Thông tin sẽ được hiển thị ở đây -->
+                        </div>
+
+                        <!-- Thêm input ẩn để lưu mã giảm giá được chọn -->
+                        <input type="hidden" id="selectedDiscountCode" name="MaKhuyenMai" />
+                        <button type="submit" id="redeemButton" class="btn btn-primary" style="display: none;">Redeem</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row justify-content-end">
+        <ul class="pagination">
+            <li class="page-item @(Model.PageNumber == 1 ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("IndexCustomerCode", new { page = Model.PageNumber - 1 })">Trước</a>
+            </li>
+            @for (int i = 1; i <= Model.PageCount; i++)
+            {
+                <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("IndexCustomerCode", new { page = i })">@i</a>
+                </li>
+            }
+            <li class="page-item @(Model.PageNumber == Model.PageCount ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("IndexCustomerCode", new { page = Model.PageNumber + 1 })">Sau</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- Modal Đổi thành công -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h5 class="modal-title w-100" id="successModalLabel">Đổi thành công</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center" id="successModalBody">
+                <!-- Nội dung thông báo sẽ được cập nhật bằng JavaScript -->
+            </div>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Thông báo không đủ điểm -->
+<div class="modal fade" id="insufficientPointsModal" tabindex="-1" role="dialog" aria-labelledby="insufficientPointsModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h5 class="modal-title w-100" id="insufficientPointsModalLabel">Không đủ điểm</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                Bạn không có đủ điểm để đổi voucher này.
+            </div>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*tạo link liên kết phân trang*@
+
+<script>
+    function redeemDiscount(discountCode) {
+        // Gán mã giảm giá vào input ẩn
+        $('#selectedDiscountCode').val(discountCode);
+
+        // Hiển thị hộp thoại xác nhận tích hợp của trình duyệt
+        // Lấy số điểm cần để đổi từ discountCode
+        var diemCanDoi = parseInt($('#diemCanDoi_' + discountCode).text());
+        var tongDiem = parseInt($('#tongDiem').data('tongdiem'));
+        var confirmResult = confirm("Bạn có xác nhận dùng " + diemCanDoi + " điểm để đổi không?");
+
+        // Kiểm tra nếu tổng điểm đủ để đổi
+        if (tongDiem >= diemCanDoi) {
+            // Hiển thị hộp thoại xác nhận tích hợp của trình duyệt
+
+            if (confirmResult) {
+                // Vô hiệu hóa nút Đổi
+                $('.btn-redeem').prop('disabled', true);
+
+                // Thực hiện hành động RedeemDiscountCode
+                $.ajax({
+                    url: '/CustomerDiscount/RedeemDiscountCode',
+                    type: 'POST',
+                    data: { MaKhuyenMai: discountCode },
+                    success: function (data) {
+                        var maKhuyenMai = $('#selectedDiscountCode').val();
+
+                        // Hiển thị thông báo với nút Sao Chép
+                        $('#successModalBody').html('Mã khuyến mãi của bạn là: <strong><span id="maKhuyenMai">' + maKhuyenMai + '</span></strong> <button class="btn btn-copy" data-clipboard-target="#maKhuyenMai"><i class="fa fa-copy"></i></button>');
+
+                        // Kích hoạt Clipboard.js
+                        var clipboard = new ClipboardJS('.btn-copy');
+
+                        // Xử lý sự kiện khi sao chép thành công
+                        clipboard.on('success', function (e) {
+                            console.log('Đã sao chép: ', e.text);
+                            alert('Coppy thành công.');
+
+                            e.clearSelection();
+                        });
+
+                        // Xử lý sự kiện khi sao chép thất bại
+                        clipboard.on('error', function (e) {
+                            console.error('Sao chép thất bại: ', e.action);
+                        });
+                        $('#successModal').modal('show');
+
+                        // Lắng nghe sự kiện hidden.bs.modal để thực hiện các hành động sau khi modal đã được đóng
+                        $('#successModal').on('hidden.bs.modal', function () {
+                            // Cập nhật hoặc làm mới nội dung cần thiết tại đây
+                            location.reload();
+                        });
+
+                        // Vô hiệu hóa nút Đổi
+                        $('.btn-redeem').prop('disabled', false);
+                    },
+                    error: function () {
+                        // Xử lý khi có lỗi (nếu cần)
+
+                        // Vô hiệu hóa nút Đổi
+                        $('.btn-redeem').prop('disabled', false);
+                    }
+                });
+            } else {
+                event.preventDefault();
+            }
+        }
+        else {
+            if (confirmResult)
+                alert('Bạn không có đủ điểm để đổi voucher này.');
+            else
+                event.preventDefault();
+        }
+    }
+</script>
+<style>
+    .btn-custom {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px; /* Điều chỉnh kích thước chữ */
+        padding: 15px 25px; /* Điều chỉnh khoảng cách giữa nội dung và lề */
+        border-radius: 10px; /* Bo tròn góc */
+        transition: all 0.3s; /* Hiệu ứng chuyển động */
+        color: white;
+        background-color: #007BFF;
+    }
+
+        .btn-custom i {
+            margin-right: 10px; /* Khoảng cách giữa biểu tượng và nội dung button */
+        }
+
+        .btn-custom:hover {
+            background-color: dodgerblue; /* Màu khi hover */
+            color: white; /* Màu chữ khi hover */
+        }
+    /* Container chứa tất cả các voucher */
+    .voucher-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Thẻ voucher styling */
+    .card {
+        flex: 0 0 calc(33.3333% - 20px); /* 33.3333% để hiển thị 3 cột trên mỗi hàng, trừ đi khoảng cách giữa chúng */
+        margin: 10px;
+        border: 2px solid #007BFF;
+        border-radius: 10px;
+    }
+
+        /* Hover effect */
+        .card:hover {
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+        }
+
+    .card-body {
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Icon styling */
+    .icon {
+        font-size: 24px;
+        color: #007BFF;
+        margin-bottom: 10px;
+    }
+
+    .btn-redeem {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .btn-redeem:hover {
+            background-color: #0056b3;
+        }
+
+    .total-points {
+        font-size: 18px;
+        color: #007BFF;
+        background-color: #f8f9fa; /* Màu nền nhằm làm nổi bật phần điểm */
+        padding: 15px;
+        border-radius: 5px;
+        display: inline-block;
+        font-weight: 700;
+    }
+
+    .elegant-text {
+        font-family: 'Your Elegant Font', sans-serif; /* Chọn font sang trọng của bạn */
+        font-size: 28px; /* Điều chỉnh kích thước chữ */
+        color: #007BFF; /* Chọn màu sắc phù hợp */
+        /* Thêm các thuộc tính CSS khác để tùy chỉnh theo ý muốn */
+    }
+
+    .title-container {
+        border-bottom: 2px solid #ddd; /* Tạo đường viền dưới cho title */
+        width: 100%;
+    }
+</style>

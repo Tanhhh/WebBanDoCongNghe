@@ -1,0 +1,161 @@
+﻿@model WebBanDoCongNghe.Models.tb_Customer
+@{
+    ViewBag.Title = "IndexUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Thông tin</a></li>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4>Hồ sơ của tôi </h4>
+                </div>
+            </div>
+            <br /><br />
+            <div style="display: flex; justify-content: center;">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-3" style="display: flex; justify-content: center;">
+                            <div style="width:100px;height:100px;">
+
+                                @if (Session["Images"] != null && Session["Images"].ToString() == "avt-user.png")
+                                {
+                                    <a data-fancybox="user-gallery" href="~/Content/template-user/images/avt-user.png" data-caption="Chưa có ảnh">
+                                        <img src="~/Content/template-user/images/avt-user.png" class="rounded-circle" alt="User" width="100">
+                                    </a>
+
+
+                                }
+                                else
+                                {
+                                    <a data-fancybox="gallery" href="~/Uploads/images_users/@Model.ImageUser.Trim()" data-caption="Ảnh đại diện">
+                                        <img src="~/Uploads/images_users/@Model.ImageUser.Trim()" class="rounded-circle" alt="User" width="100">
+                                    </a>
+                                    <br><br>
+
+                                }
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td class="col-md-3">Tài khoản</td>
+                                        <td class="col-md-9">@Model.TaiKhoan</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-3">Họ và tên</td>
+                                        <td class="col-md-9">
+                                            @if (Model.HoTen == null)
+                                            {
+                                                <a href="/User/EditUser/@Model.MaKH" style="color: #05a; text-decoration: none;">Chỉnh sửa</a>
+                                            }
+                                            else
+                                            {
+                                                @Model.HoTen
+                                            }
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-3">Email</td>
+                                        <td class="col-md-9">
+                                            @if (Model.Email == null)
+                                            {
+                                                <a href="/User/EditUser/@Model.MaKH" style="color: #05a; text-decoration: none;">Chỉnh sửa</a>
+                                            }
+                                            else
+                                            {
+                                                @Model.Email
+                                            }
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-3">Số điện thoại</td>
+                                        <td class="col-md-9">
+                                            @if (Model.Phone == null)
+                                            {
+                                                <a href="/User/EditUser/@Model.MaKH" style="color: #05a; text-decoration: none;">Chỉnh sửa</a>
+                                            }
+                                            else
+                                            {
+                                                @Model.Phone
+                                            }
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-3">Địa chỉ</td>
+                                        <td class="col-md-9">
+                                            @if (Model.Address == null)
+                                            {
+                                                <a href="/User/EditUser/@Model.MaKH" style="color: #05a; text-decoration: none;">Chỉnh sửa</a>
+                                            }
+                                            else
+                                            {
+                                                @Model.Address
+                                            }
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-3">Giới tính</td>
+                                        <td class="col-md-9">
+                                            @if (@Model.GioiTinh == null)
+                                            {
+                                                <a href="/User/EditUser/@Model.MaKH" style="color: #05a; text-decoration: none;">Chỉnh sửa</a>
+                                            }
+                                            else
+                                            {
+                                                @Model.GioiTinh
+                                            }
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-3">Ngày sinh</td>
+                                        <td class="col-md-9">
+                                            @if (Model.NgaySinh == null)
+                                            {
+                                                <a href="/User/EditUser/@Model.MaKH" style="color: #05a; text-decoration: none;">Chỉnh sửa</a>
+                                            }
+                                            else
+                                            {
+                                                @String.Format("{0:dd/MM/yyyy}", @Model.NgaySinh)
+                                            }
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-md-12 text-right">
+                                    <div class="btn-group">
+                                        <a href="/User/EditUser/@Model.MaKH" class="btn btn-sm btn-success">Cập nhật</a>
+                                        <a href="@Url.Action("ChangePassWord","Login")" class="btn btn-sm btn-primary">Đổi mật khẩu</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .fancybox-slide .fancybox-content {
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .fancybox-slide img {
+        border-radius: 50%;
+    }
+</style>

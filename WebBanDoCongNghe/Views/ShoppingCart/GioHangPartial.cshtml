@@ -1,0 +1,75 @@
+﻿@model IEnumerable<WebBanDoCongNghe.Models.ShoppingCartItem>
+
+@{
+    decimal phiShip = 50000;
+}
+@if (Model != null && Model.Any())
+{
+    <h4>Giỏ hàng</h4>
+    decimal TongTien = 0;
+    <div style="border:1px solid #808080">
+        <table class="table">
+            @foreach (var item in Model)
+            {
+                TongTien = TongTien + item.iTongGia;
+                <tr>
+                    <td>
+                        <a href="#">@item.iTenSanPham</a>
+                    </td>
+                    <td class="text-center">x @item.iSoLuong</td>
+                    <td class="text-center">  @String.Format("{0:0,0}", item.iTongGia) VND</td>
+                </tr>
+
+
+
+            }
+
+            @if (@ViewBag.GiamGia > 0)
+            {
+                <tr>
+                    <td colspan="2">Khuyến mãi:</td>
+                    <td class="text-center">- @String.Format("{0:0,0}", ViewBag.GiamGia) VND</td>
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td colspan="2">Khuyến mãi:</td>
+                    <td class="text-center">0 VND</td>
+                </tr>
+            }
+            @if (TongTien > 30000000)
+            {
+                <tr>
+                    <td colspan="2">Phí vận chuyển:</td>
+                    <td class="text-center">0 VND</td>
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td colspan="2">Phí vận chuyển:</td>
+                    <td class="text-center">+ @String.Format("{0:0,0}", phiShip) VND</td>
+                </tr>
+
+            }
+            @if (TongTien > 30000000)
+            {
+                <tr>
+                    <td colspan="2">Tổng tiền:</td>
+                    <td class="text-center">@String.Format("{0:0,0}", TongTien - (ViewBag.GiamGia ?? 0)) VND</td>
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td colspan="2">Tổng tiền:</td>
+                    <td class="text-center">@String.Format("{0:0,0}", TongTien + @phiShip - (ViewBag.GiamGia ?? 0)) VND</td>
+                </tr>
+            }
+        </table>
+    </div>
+
+
+
+}

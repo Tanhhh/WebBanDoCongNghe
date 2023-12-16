@@ -1,0 +1,84 @@
+﻿@model WebBanDoCongNghe.Models.tb_Order
+@{
+    ViewBag.Title = "CheckOutUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Giỏ hàng</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Thanh toán</a></li>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>Thanh toán</h3>
+                </div>
+            </div>
+            <hr />
+            @if (ViewBag.CheckCart != null)
+            {
+                <div style="display: flex; justify-content: center;">
+                    <div class="col-md-6">
+                        @Html.Action("GioHangPartial", "ShoppingCart")
+
+                        @using (Html.BeginForm("CheckOutUser", "ShoppingCart", FormMethod.Post, new { }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true)
+                            <div class="form-group">
+                                <label for="">Ghi chú</label>
+                                @Html.TextAreaFor(x => x.GhiChu, new { @class = "form-control" })
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="exampleInputFile">Phương thức thanh toán</label>
+                                        <div class="form-group">
+                                            <div class="custom-file">
+                                                @Html.DropDownListFor(x => x.MaPhuongThucThanhToan, ViewBag.PhuongThucThanhToan as SelectList, "-Chọn phương thức thanh toán", new { @class = "form-control" })
+                                                @Html.ValidationMessageFor(x => x.MaPhuongThucThanhToan, null, new { @class = "text-danger" })
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-right ">
+                                    <input style="margin-top:25px;" type="submit" value="Đặt Hàng" onclick="updateConfirmation(event)" class="btn btn-success">
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+
+            }
+            else
+            {
+                <div>
+                    Không có sản phẩm trong giỏ hàng! Bạn vui lòng quay lại trang <a href="/san-pham">sản phẩm</a> để mua hàng.
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function updateConfirmation(event) {
+        if (confirm('Bạn có chắc chắn muốn đặt hàng không?')) {
+            return true;
+        } else {
+            event.preventDefault();
+            return false;
+        }
+    }
+</script>
+

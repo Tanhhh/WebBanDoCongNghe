@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "IndexOrderCustomer";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+@section naviheader{
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/Admin/Home/Index" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Danh sách đặt hàng</a>
+        </li>
+    </ul>
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Danh sách khách hàng đặt hàng</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/Admin/Home/Index">Home</a></li>
+                    <li class="breadcrumb-item active">Danh sách đặt hàng</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<section class="content">
+    <div class="row">
+      
+        <div class="col-md-12">
+           
+            <div class="card">
+
+                <!--.card-header -->
+                <div class="card-header p-2">
+
+                    <ul class="nav nav-pills">
+
+                        <li class="nav-item"><a class="nav-link active" href="#OrderCustomer" data-toggle="tab">Mới</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ConfirmOrderCustomer" data-toggle="tab">Đã xác nhận</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#PakageOrderCustomer" data-toggle="tab">Đã đóng gói</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#TransportOrderCustomer" data-toggle="tab">Đang vận chuyển</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#CompleteOrderCustomer" data-toggle="tab">Đã hoàn thành</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#CancelOrderCustomer" data-toggle="tab">Đã hủy</a></li>
+
+                    </ul>
+
+                </div>
+            
+                <!--/.card-header -->
+                <!--.card-body -->
+                <div class="card-body">
+                    <!--.tab-content -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="OrderCustomer">
+                            @Html.Action("OrderCustomer", "OrderCustomer")
+                        </div>
+                        <div class="tab-pane" id="ConfirmOrderCustomer">
+                            @Html.Action("ConfirmOrderCustomer", "OrderCustomer")
+                        </div>
+                        <div class="tab-pane" id="PakageOrderCustomer">
+                            @Html.Action("PakageOrderCustomer", "OrderCustomer")
+                        </div>
+                        <div class="tab-pane" id="TransportOrderCustomer">
+                            @Html.Action("TransportOrderCustomer", "OrderCustomer")
+                        </div>
+                        <div class="tab-pane" id="CompleteOrderCustomer">
+                            @Html.Action("CompleteOrderCustomer", "OrderCustomer")
+                        </div>
+                        <div class="tab-pane" id="CancelOrderCustomer">
+                            @Html.Action("CancelOrderCustomer", "OrderCustomer")
+                        </div>
+                    </div>
+                </div>
+                <!--/.tab-content -->
+            </div>
+            <!--/.card-body -->
+        </div>
+    </div>
+</section>
+
+

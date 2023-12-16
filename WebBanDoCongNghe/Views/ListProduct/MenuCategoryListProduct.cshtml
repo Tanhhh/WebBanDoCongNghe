@@ -1,0 +1,19 @@
+﻿@model IEnumerable<WebBanDoCongNghe.Models.tb_ProductCategory>
+
+
+@if (Model != null && Model.Any())
+{
+
+    foreach (var item in Model)
+    {
+        if (ViewBag.cateId == item.MaProductCategory)
+        {
+            <li class="active"><a href="@Url.Action("ListProductByCategory",new {@id=item.MaProductCategory})"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>@item.TenDanhMuc<span>(@item.tb_Product.Count(n => n.IsActive == true && n.IsSoldOut == false && n.tb_ProductCategory.TenDanhMuc == item.TenDanhMuc))</span></a></li>
+        }
+        else
+        {
+            <li><a href="@Url.Action("ListProductByCategory",new {@id=item.MaProductCategory})">@item.TenDanhMuc<span>(@item.tb_Product.Count(n => n.IsActive == true && n.IsSoldOut == false && n.tb_ProductCategory.TenDanhMuc == item.TenDanhMuc))</span></a></li>
+        }
+
+    }
+}

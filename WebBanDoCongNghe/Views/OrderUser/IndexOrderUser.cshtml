@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "IndexOrderUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Đơn đặt hàng</a></li>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <!--.card-header -->
+                            <div class="card-header p-2">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item"><a class="nav-link active" href="#OrderUser" data-toggle="tab">Đơn hàng hiện tại</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#CompleteOrderUser" data-toggle="tab">Đơn hàng đã hoàn thành</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#CancelOrderUser" data-toggle="tab">Đơn hàng đã hủy</a></li>
+                                </ul>
+                            </div>
+                            <!--/.card-header -->
+                            <!--.card-body -->
+                            <div class="card-body">
+                                <!--.tab-content -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="OrderUser">
+                                        @Html.Action("OrderUser", "OrderUser")
+                                    </div>
+                                    <div class="tab-pane" id="CompleteOrderUser">
+                                        @Html.Action("CompleteOrderUser", "OrderUser")
+                                    </div>
+                                    <div class="tab-pane" id="CancelOrderUser">
+                                        @Html.Action("CancelOrderUser", "OrderUser")
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.tab-content -->
+                        </div>
+                        <!--/.card-body -->
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>
+

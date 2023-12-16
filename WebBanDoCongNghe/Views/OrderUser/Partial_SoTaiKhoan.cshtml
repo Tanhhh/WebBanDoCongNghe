@@ -1,0 +1,26 @@
+﻿@model IEnumerable<WebBanDoCongNghe.Models.tb_TaiKhoanNganHang>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="text-center">Tên ngân hàng</th>
+            <th class="text-center">Mã tài khoản</th>
+            <th class="text-center">Thông tin</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">@item.TenNganHang</td>
+                    <td class="text-center">@item.SoTaiKhoan</td>
+                    <td class="text-center">@item.Description</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+

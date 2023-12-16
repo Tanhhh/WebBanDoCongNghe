@@ -1,0 +1,116 @@
+﻿@model WebBanDoCongNghe.Models.tb_Traveler
+@{
+    ViewBag.Title = "CheckOut";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Giỏ hàng</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Thanh toán</a></li>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>Thanh toán</h3>
+                </div>
+            </div>
+            <hr />
+            @if (ViewBag.CheckCart != null)
+            {
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4>Thông tin thanh toán</h4>
+                        @using (Html.BeginForm("CheckOut", "ShoppingCart", FormMethod.Post, new { }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true)
+                            <div class="form-group">
+                                <label for="" class="bold-label">Họ và tên</label>
+                                @Html.TextBoxFor(x => x.HoTen, new { @class = "form-control", placeholder = "Nhập họ và tên" })
+                                <span class="field-validation-error">@Html.ValidationMessageFor(x => x.HoTen)</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="bold-label">Email</label>
+                                @Html.TextBoxFor(x => x.Email, new { @class = "form-control", placeholder = "Nhập email" })
+                                <span class="field-validation-error">@Html.ValidationMessageFor(x => x.Email)</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="bold-label">Số điện thoại</label>
+                                @Html.TextBoxFor(x => x.PhoneNumber1, new { @class = "form-control", placeholder = "Nhập số điện thoại" })
+                                <span class="field-validation-error">@Html.ValidationMessageFor(x => x.PhoneNumber1)</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="bold-label">Số điện thoại phụ (có thể bỏ trống)</label>
+                                @Html.TextBoxFor(x => x.PhoneNumber2, new { @class = "form-control", placeholder = "Nhập số điện thoại phụ nếu có" })
+                                <span class="field-validation-error">@Html.ValidationMessageFor(x => x.PhoneNumber2)</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="bold-label">Địa chỉ (Số nhà, Tên đường, Phường, Quận, Thành phố)</label>
+                                @Html.TextBoxFor(x => x.Address, new { @class = "form-control", placeholder = "Nhập địa chỉ" })
+                                <span class="field-validation-error">@Html.ValidationMessageFor(x => x.Address)</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="bold-label">Ghi chú</label>
+                                @Html.TextAreaFor(x => x.Ghichu, new { @class = "form-control" })
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="exampleInputFile" class="bold-label">Phương thức thanh toán</label>
+                                        <div class="form-group">
+                                            <div class="custom-file">
+                                                @Html.DropDownListFor(x => x.MaPhuongThucThanhToan, ViewBag.PhuongThucThanhToan as SelectList, "-Chọn phương thức thanh toán", new { @class = "form-control" })
+                                                @Html.ValidationMessageFor(x => x.MaPhuongThucThanhToan, null, new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col text-right ">
+                                    <input style="margin-top:25px;" type="submit" value="Đặt Hàng" onclick="updateConfirmation(event)" class="btn btn-success">
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="col-md-4">
+                        @Html.Action("GioHangPartial", "ShoppingCart")
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div>
+                    Không có sản phẩm trong giỏ hàng! Bạn vui lòng quay lại trang <a href="/san-pham">sản phẩm</a> để mua hàng.
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .field-validation-error {
+        color: red;
+    }
+
+    .bold-label {
+        font-weight: 600;
+    }
+</style>
+
+<script>
+    function updateConfirmation(event) {
+        if (confirm('Bạn có chắc chắn muốn đặt hàng không?')) {
+            return true;
+        } else {
+            event.preventDefault();
+            return false;
+        }
+    }
+</script>

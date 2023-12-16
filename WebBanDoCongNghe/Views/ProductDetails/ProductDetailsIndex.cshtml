@@ -1,0 +1,406 @@
+﻿@model WebBanDoCongNghe.Models.tb_Product
+@{
+    ViewBag.Title = "ProductDetailsIndex";
+    Layout = "~/Views/Shared/_LayoutProductDetails.cshtml";
+    var user = Session["taikhoan"] as WebBanDoCongNghe.Models.tb_Customer;
+    var reviews = Model as PagedList.IPagedList<WebBanDoCongNghe.Models.tb_ProductReview>;
+
+}
+
+@if (Model != null)
+{
+    <div class="container single_product_container">
+        <div class="row">
+            <div class="col">
+
+                <!-- Breadcrumbs -->
+
+                <div class="breadcrumbs d-flex flex-row align-items-center">
+                    <ul>
+                        <li><a href="@Url.Action("IndexHome", "Home")">Trang chủ</a></li>
+                        <li><a href="@Url.Action("ListProductByCategory","ListProduct",new {@id=Model.MaProductCategory})"><i class="fa fa-angle-right" aria-hidden="true"></i>@Model.tb_ProductCategory.TenDanhMuc</a></li>
+                        <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>@Model.TenSanPham</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-7">
+                @if (Model.tb_ProductImages != null && Model.tb_ProductImages.Any())
+                {
+                    <div class="single_product_pics">
+                        <div class="row">
+                            <div class="col-lg-3 thumbnails_col order-lg-1 order-2">
+                                <div class="single_product_thumbnails">
+                                    <ul>
+                                        @foreach (var item in Model.tb_ProductImages)
+                                        {
+                                            if (item.IsDefault == true)
+                                            {
+                                                <li class="active" style="object-fit: cover;"><img style="height:100%;width:auto;" src="@item.Image" alt="" data-image="@item.Image"></li>
+                                            }
+                                            else
+                                            {
+                                                <li style="object-fit: cover;"><img style="height:100%;width:auto;" src="@item.Image" alt="" data-image="@item.Image"></li>
+                                            }
+
+                                        }
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 image_col order-lg-2 order-1">
+                                <div class="single_product_image">
+                                    <div class="single_product_image_background" style="background-image:url(@Model.tb_ProductImages.FirstOrDefault(n=>n.IsDefault==true).Image)"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+            <div class="col-lg-5">
+                <div class="product_details">
+                    <div class="product_details_title">
+                        <h2>@Model.TenSanPham</h2>
+                        <p>@Model.Description</p>
+                    </div>
+                    <div class="free_delivery d-flex flex-row align-items-center justify-content-center">
+                        <span class="ti-truck"></span><span>free delivery</span>
+                    </div>
+                    @if (@Model.IsSale == true)
+                    {
+                        <div class="original_price">@String.Format("{0:0,0}", @Model.PriceSale)</div>
+                        <div class="product_price">@String.Format("{0:0,0}", @Model.Price)</div>
+                    }
+                    @if (@Model.IsSale == false || @Model.IsSale == null)
+                    {
+                        <div class="product_price">@String.Format("{0:0,0}", @Model.Price)</div>
+                    }
+
+                <div class="product_rating" style="pointer-events: none;">
+                    <span>Rating: @Math.Round(ViewBag.AverageRating, 2)</span>
+                    <div class="user_star_rating">
+                        @{
+                            for (int i = 1; i <= 5; i++)
+                            {
+                                <span class="star_01 @(i <= ViewBag.AverageRating ? "active" : "")">&#9733;</span>
+                            }
+                        }
+                    </div>
+                </div>
+                    <div class="product_color">
+                        <span>Color:</span>
+                        <ul>
+                            <li><img src="@Model.tb_Color.ImageColor" style="width:15px;height:15px;border-radius:50%" /></li>
+                        </ul>
+                    </div>
+                    <div class="product_color">
+                        <span>Memory:</span>
+                        <ul>
+                            @if (Model.MaMemory != null)
+                            {
+                                <li>@Model.tb_Memory.TenMemory</li>
+                            }
+                        </ul>
+                    </div>
+                    <div class="quantity d-flex flex-column flex-sm-row align-items-sm-center">
+                        <span>Quantity:</span>
+                        <div class="quantity_selector">
+                            <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                            <span id="quantity_value">1</span>
+                            <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                        </div>
+                        @if (@Model.Quantity > 0)
+                        {
+                            <div class="red_button add_to_cart_button"><a href="#" class="btnAddToCart" data-id="@Model.MaSanPham">add to cart</a></div>
+                        }
+                        else
+                        {
+                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#outOfStockModal" style="margin-left:20px">
+                                HẾT HÀNG
+                            </button>
+
+                        }
+                        @{
+                            var check = ViewData["FavCheck"];
+                        }
+
+                        @if (Session["taikhoan"] != null)
+                        {
+                            if (check.ToString() == "1")
+                            {
+                                <a class="product_favorite d-flex flex-column align-items-center justify-content-center active"
+                                   href="@Url.Action("addorremoveFavorit", "ProductDetails", new { id = Model.MaSanPham })"
+                                   onclick="showUnfavoriteNotification()">
+                                </a>
+                            }
+                            if (check.ToString() == "0")
+                            {
+                                <a class="product_favorite d-flex flex-column align-items-center justify-content-center"
+                                   href="@Url.Action("addorremoveFavorit", "ProductDetails", new { id = Model.MaSanPham })"
+                                   onclick="showFavoriteNotification()">
+                                </a>
+                            }
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tabs -->
+    <div class="tabs_section_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="tabs_container">
+                        <ul class="tabs d-flex flex-sm-row flex-column align-items-left align-items-md-center justify-content-center">
+                            <li class="tab active" data-active-tab="tab_1"><span>Đánh giá (@Model.tb_ProductReview.Count())</span></li>
+                            <li class="tab" data-active-tab="tab_2"><span>Sản phẩm liên quan (@ViewBag.SimilarProductCount) </span></li>
+                            <li class="tab" data-active-tab="tab_3"><span>Mô tả sản phẩm</span></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="min-height:500px;">
+                <div class="col">
+                    <!-- Tab Reviews -->
+                    <div id="tab_1" class="tab_container active">
+                        <div class="row">
+                            <!-- User Reviews -->
+                            @if (Session["MaKH"] != null)
+                            {
+                                @Html.Action("ProductReviews", new { id = Model.MaSanPham }) <!-- Gọi action "ProductReviews" trong cùng controller -->
+
+                                <!-- Add Review -->
+
+                                <div class="col-lg-6 add_review_col">
+                                    <div class="add_review">
+
+                                        <form id="review_form" action="@Url.Action("AddReview", "ProductDetails")" method="post">
+                                            <h2 style="text-align:center">Đánh giá</h2>
+                                            <input type="hidden" name="MaSanPham" value="@Model.MaSanPham" />
+
+                                            <div class="user-avatar">
+                                                <img src="~/Uploads/images_users/@(user?.ImageUser)" alt="@(user?.ImageUser)" style="width: 80px; height: 60px; border-radius: 50%; margin: 10px; margin-right: 15px;">
+                                            </div>
+
+                                            <br />
+                                            <div>
+                                                <h1 style="font-size:16px" class="user-info-heading">Tên khách hàng</h1>
+                                                <input id="review_name" class="form_input input_name" type="text" name="Hoten" placeholder="Name*" readonly value="@(user?.HoTen)">
+                                                <h1 style="font-size:16px" class="user-info-heading">Tài khoản</h1>
+                                                <input id="review_taikhoan" class="form_input input_name" type="text" name="TaiKhoan" placeholder="TaiKhoan*" readonly value="@(user?.TaiKhoan)">
+                                            </div>
+                                            <div>
+                                                <label for="Rating" style="font-weight:500">Rating:</label>
+                                                <div id="rating-container">
+                                                    <span class="star" data-rating="1">&#9733;</span>
+                                                    <span class="star" data-rating="2">&#9733;</span>
+                                                    <span class="star" data-rating="3">&#9733;</span>
+                                                    <span class="star" data-rating="4">&#9733;</span>
+                                                    <span class="star" data-rating="5">&#9733;</span>
+                                                </div>
+                                                <input type="hidden" name="Rating" id="Rating" value="1" />
+                                                <textarea id="review_message" class="input_review" name="NoiDung" placeholder="Nhập đánh giá" rows="4" required data-error="Please, leave us a review."></textarea>
+                                            </div>
+                                            <div class="text-left text-sm-right">
+                                                <button id="review_submit" type="submit" class="red_button review_submit_btn trans_300" value="Submit">đánh giá</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                @Html.Action("ProductReviews", new { id = Model.MaSanPham }) <!-- Gọi action "ProductReviews" trong cùng controller -->
+
+                            }
+                        </div>
+                    </div>
+                    <!-- Tab Description -->
+                    <!-- Tab Additional Info -->
+                    <div id="tab_2" class="tab_container">
+                        <div class="row">
+                            <div class="col additional_info_col">
+                                <div id="relatedProductsContainer">
+
+                                    @Html.Action("RelatedProducts", new { productId = Model.MaSanPham })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab_3" class="tab_container">
+                        <div class="col-lg-12 desc_col">
+                            <div class="tab_title" style="margin:0px">
+                                <h4>Description</h4>
+                            </div>
+                            <div class="tab_text_block">
+                                <p>@Model.Detail</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<script>
+    function showFavoriteNotification() {
+        // Hiển thị thông báo yêu thích thành công
+        alert('Thêm yêu thích thành công!');
+    }
+
+    function showUnfavoriteNotification() {
+        // Hiển thị thông báo hủy yêu thích thành công
+        alert('Xóa yêu thích thành công!');
+    }
+    function showSuccessNotification() {
+        alert('Đánh giá thành công!');
+    }
+
+
+    $(document).ready(function () {
+        // Xử lý sự kiện khi người dùng chọn sao
+        $('.star').on('click', function () {
+            var ratingValue = $(this).data('rating');
+            $('#Rating').val(ratingValue);
+
+            // Cập nhật màu sắc của sao
+            $('.star').removeClass('selected');
+            $('.star').slice(0, ratingValue).addClass('selected');
+        });
+
+        // Xử lý sự kiện khi người dùng submit đánh giá
+        $('#review_submit').on('click', function () {
+            // Thực hiện các thao tác lưu đánh giá vào cơ sở dữ liệu ở đây...
+
+            // Hiển thị thông báo thành công
+            showSuccessNotification();
+        });
+    });
+
+</script>
+<style>
+    .user_star_rating {
+        font-size: 24px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+        .user_star_rating .star_01 {
+            color: #ccc; /* Màu mặc định */
+            cursor: pointer;
+            transition: color 0.3s;
+            margin-right: 5px;
+        }
+
+            .user_star_rating .star_01.active {
+                color: #fdd835; /* Màu vàng */
+            }
+
+    #rating-container {
+        font-size: 24px;
+        color: #ccc;
+        margin-bottom: 15px;
+    }
+
+    .star {
+        cursor: pointer;
+        transition: color 0.3s;
+        margin-right: 5px;
+    }
+
+        .star.selected {
+            color: #fdd835; /* Màu vàng */
+        }
+
+    /* Định dạng chung cho form */
+    #review_form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    /* Định dạng chung cho tiêu đề và các ô nhập liệu */
+    h2, h1, input, textarea {
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    /* Định dạng chung cho hình ảnh người dùng */
+    .user-avatar {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+        .user-avatar img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 10px;
+            margin-right: 15px;
+        }
+
+    /* Định dạng cho nút submit */
+    #review_submit {
+        background-color: #e8491d;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        /* Hover effect cho nút submit */
+        #review_submit:hover {
+            background-color: #333;
+        }
+
+    /* Định dạng cho đánh giá sao */
+    .user_star_rating {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+        .user_star_rating li {
+            font-size: 24px;
+            color: #e8491d;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+            .user_star_rating li:hover,
+            .user_star_rating li.active {
+                color: #fdd835; /* Màu vàng */
+            }
+
+    /* Định dạng cho ô nhập liệu đánh giá */
+    #review_message {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        margin-bottom: -20px; /* Giảm khoảng cách bottom cho h1 */
+        color: #333;
+    }
+</style>

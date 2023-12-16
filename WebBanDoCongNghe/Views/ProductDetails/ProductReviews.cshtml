@@ -1,0 +1,59 @@
+﻿@model PagedList.IPagedList<WebBanDoCongNghe.Models.tb_ProductReview>
+@using PagedList.Mvc;
+
+<div class="col-lg-6 reviews_col">
+    <div class="tab_title reviews_title">
+        <h4>Đánh giá (@Model.TotalItemCount)</h4>
+    </div>
+
+    <!-- Kiểm tra xem có đánh giá nào không -->
+    @if (Model.Count > 0)
+    {
+        <!-- Hiển thị đánh giá từ cơ sở dữ liệu -->
+        foreach (var review in Model)
+        {
+            <div class="user_review_container d-flex flex-column flex-sm-row">
+                <div class="user">
+                    <div class="user_pic">
+                        <img src="~/Uploads/images_users/@(review.tb_Customer.ImageUser)" alt="@(review.tb_Customer.ImageUser)" style="width: 70px; height: 70px; border-radius: 50%;">
+                    </div>
+                    <div class="user_rating">
+                        <ul class="star_rating">
+                            @for (int i = 1; i <= review.Rating; i++)
+                            {
+                                <li><i class="fa fa-star @(i <= review.Rating ? "active" : "")" aria-hidden="true"></i></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="review_date">@review.NgayDanhGia</div>
+                    <div class="user_name">@review.tb_Customer.TaiKhoan</div>
+                    <p>@review.NoiDung</p>
+                </div>
+            </div>
+        }
+
+        <!-- Hiển thị phân trang -->
+        <div class="row justify-content-end">
+            <ul class="pagination">
+                <li class="page-item @(Model.PageNumber == 1 ? "disabled" : "")">
+                    <a class="page-link" href="@Url.Action("ProductDetailsIndex", new { page = Model.PageNumber - 1 })">Trước</a>
+                </li>
+                @for (int i = 1; i <= Model.PageCount; i++)
+                {
+                    <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("ProductDetailsIndex", new { page = i })">@i</a>
+                    </li>
+                }
+                <li class="page-item @(Model.PageNumber == Model.PageCount ? "disabled" : "")">
+                    <a class="page-link" href="@Url.Action("ProductDetailsIndex", new { page = Model.PageNumber + 1 })">Sau</a>
+                </li>
+            </ul>
+        </div>
+    }
+    else
+    {
+        <p>Chưa có đánh giá.</p>
+    }
+</div>

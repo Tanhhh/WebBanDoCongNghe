@@ -1,0 +1,60 @@
+﻿@model PagedList.PagedList<WebBanDoCongNghe.Models.tb_Contact>
+@using PagedList.Mvc;
+
+<div class="card-body">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="text-center">STT</th>
+                <th class="text-center">Tên khách hàng</th>
+                <th class="text-center">Số điện thoại</th>
+                <th class="text-center">Email</th>
+                <th class="text-center">Ngày liên hệ</th>
+                <th class="text-center">Xử lý liên hệ</th>
+                <th class="text-center">Cập nhật</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                var i = 1;
+                foreach (var item in Model)
+                {
+                    var xulyCheck = item.IsXuLy == true ? "<a><i class='fa fa-check text-success'></i></a>" : "<a><i class='fas fa-times text-danger'></i></a>";
+            <tr>
+                <td class="text-center">@i</td>
+                <td class="text-center">@item.HoTen</td>
+                <td class="text-center">@item.PhoneNumber</td>
+                <td class="text-center">@item.Email</td>
+                <td class="text-center">@item.CreateDate</td>
+                <td class="text-center">@Html.Raw(xulyCheck)</td>
+                <td class="text-center">
+                    <a href="/Admin/Contact/EditContact/@item.ContactID" class="btn btn-sm btn-primary">Chọn</a>
+                </td>
+            </tr>
+                    i++;
+                }
+
+            }
+            else
+            {
+                <tr>
+                    <td colspan="12">Không có liên hệ nào!</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
+@*tạo link liên kết phân trang*@
+<div id="phantrang">
+    <div>
+        Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+    </div>
+    <div id="phantrang-SoThuTu">
+        @Html.PagedListPager(Model, page => Url.Action("IndexContact", new { page = page }))
+    </div>
+</div>
+
+
+

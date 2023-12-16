@@ -1,0 +1,135 @@
+﻿@model PagedList.PagedList<WebBanDoCongNghe.Models.tb_Product>
+@using PagedList;
+@using PagedList.Mvc;
+
+
+@{
+    ViewBag.Title = "IndexFAV";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="@Url.Action("IndexHome", "Home")">Trang chủ</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Yêu thích</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="font-weight-bold">Danh sách yêu thích</h3>
+                </div>
+            </div>
+
+            <div class="mt-4 d-flex flex-wrap justify-content-center">
+                @if (Model == null || !Model.Any())
+                {
+                    <div class="alert alert-info text-center" role="alert">
+                        <i class="fas fa-heart fa-3x mb-3"></i>
+                        <p class="mb-0">Bạn chưa có sản phẩm yêu thích nào.</p>
+                    </div>
+                }
+                else
+                {
+                    foreach (var item in Model)
+                    {
+                        var strImage = "";
+                        var image = item.tb_ProductImages.FirstOrDefault(n => n.IsDefault == true);
+                        if (image != null)
+                        {
+                            strImage = image.Image;
+                        }
+
+                        <div class="product-item @item.tb_ProductCategory.Link">
+                            <div class="product discount product_filter">
+                                <div style="min-height:240px;" class="product_image">
+                                    <a href="/chi-tiet/@item.Link-p@(item.MaSanPham)"><img src="@strImage" alt="@item.TenSanPham"></a>
+                                </div>
+                                @if (item.IsSale == true)
+                                {
+                                    <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>Sale</span></div>
+                                }
+                                <div class="product_info">
+                                    <h6 style="margin-top:20px !important;" class="product_name"><a href="/chi-tiet/@item.Link-p@(item.MaSanPham)">@item.TenSanPham</a></h6>
+                                    @if (item.IsSale == true)
+                                    {
+                                        <div class="product_price">@String.Format("{0:0,0}", @item.PriceSale) VND</div>
+                                        <div class="product_price"><span style="margin:0">@String.Format("{0:0,0}", @item.Price) VND</span></div>
+                                        <div style="display:none" class="in_product_price"> @item.PriceSale</div>
+                                    }
+                                    @if (item.IsSale == false || item.IsSale == null)
+                                    {
+                                        <div class="product_price">@String.Format("{0:0,0}", @item.Price) VND</div>
+                                        <div style="display:none" class="in_product_price"> @item.Price</div>
+                                    }
+                                </div>
+                            </div>
+                            <div class="red_button add_to_cart_button">
+                                <a href="javascript:void(0);"
+                                   onclick="confirmRemoveFavorite('@item.MaSanPham')"
+                                   class="btn btn-danger btn-sm"
+                                   style="margin-bottom:15px">
+                                    Xóa yêu thích
+                                </a>
+                            </div>
+                        </div>
+                    }
+
+                }
+
+            </div>
+
+        </div>
+    </div>
+    <br />   
+    <br />
+
+    <div class="row justify-content-end">
+        <ul class="pagination">
+            <li class="page-item @(Model.PageNumber == 1 ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("IndexFAV", new { page = Model.PageNumber - 1 })">Trước</a>
+            </li>
+            @for (int i = 1; i <= Model.PageCount; i++)
+            {
+                <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("IndexFAV", new { page = i })">@i</a>
+                </li>
+            }
+            <li class="page-item @(Model.PageNumber == Model.PageCount ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("IndexFAV", new { page = Model.PageNumber + 1 })">Sau</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<script>
+    function confirmRemoveFavorite(productId) {
+        var result = confirm("Xác nhận xóa yêu thích?");
+        if (result) {
+            // If the user confirms, send an AJAX request to remove the favorite
+            // Assuming you have jQuery available for AJAX operations
+            $.ajax({
+                url: "/ProductDetails/removeFavorit/" + productId,
+                method: "GET",
+                success: function () {
+                    alert("Xóa yêu thích thành công");
+                    // Load lại trang sau khi xóa thành công
+                    location.reload();
+                },
+                error: function () {
+                    alert("Xóa yêu thích thất bại");
+                }
+            });
+        }
+    }
+</script>
+
+
+
+
+

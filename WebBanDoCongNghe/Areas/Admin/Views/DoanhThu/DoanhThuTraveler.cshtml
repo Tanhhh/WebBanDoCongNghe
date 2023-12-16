@@ -1,0 +1,203 @@
+﻿@model PagedList.PagedList<WebBanDoCongNghe.Models.tb_Traveler>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "DoanhThuTraveler";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@section naviheader{
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/Admin/Home/Index" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Doanh thu khách hàng</a>
+        </li>
+    </ul>
+}
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h2 class="mt-1" style="font-weight: 600">Doanh thu khách hàng</h2>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/Admin/Home/Index">Home</a></li>
+                    <li class="breadcrumb-item active">Doanh thu khách hàng</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container mt-4">
+    <div class="row">
+        <!-- Phần tìm kiếm -->
+        <div class="col-md-7">
+            @using (Html.BeginForm("DoanhThuTraveler", "DoanhThu", FormMethod.Get))
+            {
+            <div class="form-row align-items-center">
+                <div class="form-group mx-sm-3 mb-2">
+                    @Html.TextBox("fromDate", ViewBag.FromDate != null ? ((DateTime)ViewBag.FromDate).ToString("yyyy-MM-dd") : "", new { @class = "form-control", type = "date" })
+                </div>
+
+                <div class="form-group mx-sm-3 mb-2">
+                    @Html.Label("Đến ngày:", new { @class = "sr-only" })
+                    @Html.TextBox("toDate", ViewBag.ToDate != null ? ((DateTime)ViewBag.ToDate).ToString("yyyy-MM-dd") : "", new { @class = "form-control", type = "date" })
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    @Html.Label("Nhân viên:", new { @class = "sr-only" })
+                    @Html.DropDownList("employeeId", ViewBag.EmployeeList as SelectList, "Chọn nhân viên", new { @class = "form-control" })
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    @Html.Label("Số điện thoại:", new { @class = "sr-only" })
+                    @Html.TextBox("phoneCus", null, new { @class = "form-control", placeholder = "Nhập SĐT khách hàng" })
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    @Html.Label("Phương thức thanh toán:", new { @class = "sr-only" })
+                    @Html.TextBox("paymentMethodName", null, new { @class = "form-control", placeholder = "Phương thức thanh toán" })
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-2">Tìm kiếm</button>
+                </div>
+            </div>
+            }
+        </div>
+        <div class="col-md-9 mt-4">
+            <h4 class="mt-1" style="font-weight: 600;text-align:center">Biểu đồ doanh thu</h4>
+
+            <canvas id="myChart" style="width:100%;max-width:800px; height: 200px;"></canvas>
+        </div>
+        @if (Model != null && Model.Any())
+        {
+            <div>
+                <h3 class="mt-1" style="font-weight: 600">Tổng doanh thu: @ViewBag.FormattedTotalRevenue VND</h3>
+            </div>
+
+            <table class="table table-bordered table-hover mt-4">
+                <thead>
+                    <tr style="font-weight:600" class="text-center">
+                        <td>Mã đơn hàng</td>
+                        <td>Tên khách hàng</td>
+                        <td>Số điện thoại</td>
+                        <td>Doanh thu</td>
+                        <th>Ngày đặt hàng</th>
+                        <th>Ngày hoàn thành</th>
+                        <th>Chi tiết</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var order in Model)
+                    {
+
+                    <tr class="text-center">
+                        <td>@order.MaDonHang</td>
+                        <td>@order.HoTen</td>
+                        <td>@order.PhoneNumber1</td>
+                        <td>@String.Format("{0:0,0}", order.TotalPayment) VND</td>
+                        <td>@string.Format("{0:dd/MM/yyyy h:mm:ss tt}", order.CreateDate)</td>
+                        <td>@string.Format("{0:dd/MM/yyyy h:mm:ss tt}", order.UpdatedDate)</td>
+                        <td class="text-center">
+                            <a href="/Admin/OrderTraveler/OrderTravelerDetail/@order.MaDonHang" class="btn btn-sm btn-primary">Xem</a>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+            <div id="phantrang">
+                <div>
+                    Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+                </div>
+                <div id="phantrang-SoThuTu">
+                    @Html.PagedListPager(Model, page => Url.Action("DoanhThuTraveler", new { page = page }))
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="col-md-9 mt-4">
+                <div class="alert alert-info" role="alert">
+                    <h4 class="alert-heading">Thông báo</h4>
+                    <p>Không có đơn hàng nào.</p>
+
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+
+
+<script>
+// Lấy dữ liệu từ ViewBag và chuyển đổi thành mảng
+var dailyRevenue = @Html.Raw(Json.Encode(ViewBag.DailyRevenue));
+
+// Tạo mảng các ngày và doanh thu tương ứng
+    var currentDate = new Date().toLocaleDateString();
+    var xValues = dailyRevenue.map(function (entry) {
+        var date = entry.Date ? new Date(entry.Date).toLocaleDateString() : 'N/A';
+        return date !== 'Invalid Date' ? date : '';
+    });
+
+var yValues = dailyRevenue.map(function (entry) {
+    return entry.Revenue;
+});
+
+// Số lượng màu sắc đủ để phục vụ tất cả các thanh trong biểu đồ
+var barColor = "blue"; // Màu sắc của cột
+
+new Chart("myChart", {
+    type: "bar",
+    data: {
+        labels: xValues,
+        datasets: [{
+            backgroundColor: barColor,
+            data: yValues
+        }]
+    },
+    options: {
+        tooltips: {
+            callbacks: {
+                label: function (tooltipItem, data) {
+                    var label = data.labels[tooltipItem.index] || '';
+
+                    // Lấy doanh thu tương ứng với cột hiện tại
+                    var revenue = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+
+                    // Định dạng thông tin hiển thị trong tooltip
+                    return label + ': ' + new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(revenue);
+                }
+            }
+        },
+        scales: {
+            x: {
+                grid: {
+                    display: false
+                }
+            },
+            y: {
+                beginAtZero: true,
+                ticks: {
+                    callback: function (value, index, values) {
+                        return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(value);
+                    }
+                }
+            }
+        },
+        legend: { display: false },
+        title: {
+            display: true,
+            text: "Doanh thu theo ngày"
+        }
+    }
+});
+</script>
+

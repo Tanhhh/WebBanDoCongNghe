@@ -1,0 +1,132 @@
+﻿@model WebBanDoCongNghe.Models.tb_Customer
+@{
+    ViewBag.Title = "IndexUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="/User/IndexUser/@Model.MaKH"><i class="fa fa-angle-right" aria-hidden="true"></i>Thông tin</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Cập nhật</a></li>
+
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4>Cập nhật hồ sơ</h4>
+                </div>
+            </div>
+            <br /><br />
+            <div style="display: flex; justify-content: center;">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div style="width:100px;height:100px;">
+                            @if (Session["Images"] != null && Session["Images"].ToString() == "avt-user.png")
+                            {
+                                <img src="~/Content/template-user/images/avt-user.png" class="rounded-circle" alt="User" width="100">
+                                <br> <br />
+                                using (Html.BeginForm("UpdateImage", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                {
+                                    <input type="file" name="ImageUser" id="file" style="width:100px" onchange="updateUploadButton()" />
+                                    <input type="submit" value="Upload" class="btn btn-sm btn-primary" id="uploadButton" onclick="submitForm()" style="display:none;margin-left:10px" />
+                                }
+
+                            }
+
+                            else
+                            {
+                                <img src="~/Uploads/images_users/@Model.ImageUser.Trim()" class="rounded-circle" alt="User" width="100"><br>
+                                <br />
+                                using (Html.BeginForm("UpdateImage", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                {
+                                    <input type="file" name="ImageUser" id="file" style="width: 100px" onchange="updateUploadButton()" />
+                                    <input type="submit" value="Upload" class="btn btn-sm btn-primary" id="uploadButton" onclick="submitForm()" style="display:none;margin-left:10px" />
+                                }
+                            }
+                        </div>
+                        <div class="col-md-9">
+                            @using (Html.BeginForm("EditUser", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                            {
+                                @Html.AntiForgeryToken()
+
+                                @Html.HiddenFor(x => x.MaKH)
+                                <!-- Thêm dòng này -->
+                                <table class="table table-hover">
+                                    <tbody>
+
+                                        <tr>
+                                            <td class="col-md-3">Họ và tên</td>
+                                            <td class="col-md-9">
+                                                @Html.TextBoxFor(x => x.HoTen, new { @class = "form-control" })
+                                                @Html.ValidationMessageFor(x => x.HoTen, null, new { @class = "text-danger" })
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-3">Email</td>
+                                            <td class="col-md-9">
+                                                @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                                                @Html.ValidationMessageFor(x => x.Email, null, new { @class = "text-danger" })
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-3">Số điện thoại</td>
+                                            <td class="col-md-9">
+                                                @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+                                                @Html.ValidationMessageFor(x => x.Phone, null, new { @class = "text-danger" })
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-3">Địa chỉ</td>
+                                            <td class="col-md-9">
+                                                @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })
+                                                @Html.ValidationMessageFor(x => x.Address, null, new { @class = "text-danger" })
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-3">Giới tính</td>
+                                            <td class="col-md-9">
+                                                @Html.RadioButtonFor(x => x.GioiTinh, "Nam") Nam   @Html.RadioButtonFor(x => x.GioiTinh, "Nữ") Nữ  @Html.RadioButtonFor(x => x.GioiTinh, "Khác") Khác
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-3">Ngày sinh</td>
+                                            <td class="col-md-9">
+                                                <input name="NgaySinh" type="date" value="@Model.NgaySinh" />
+                                                @Html.ValidationMessageFor(x => x.NgaySinh, null, new { @class = "text-danger" })
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <div class="col-md-12 text-right">
+                                    <a href="/User/IndexUser/@Model.MaKH" class="btn btn-danger">Quay lại</a>
+                                    <button type="submit" class="btn btn-success">Cập nhật</button>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function updateUploadButton() {
+        // Hiển thị nút Upload
+        document.getElementById("uploadButton").style.display = "inline-block";
+
+        // Ẩn nút Choose File
+        document.getElementById("file").style.display = "none";
+    }
+
+    function submitForm() {
+        // Gọi hàm submitForm() khi nút Upload được nhấn
+        document.getElementById("uploadForm").submit();
+    }
+</script>>

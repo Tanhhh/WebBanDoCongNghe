@@ -1,0 +1,317 @@
+﻿<html lang="en">
+<head>
+    <title>Electroshop</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Colo Shop Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="~/Content/template-user/images/Screenshot 2022-12-17 003414.png">
+
+    <link href="~/Content/template-user/styles/bootstrap4/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/template-user/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/template-user/styles/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/template-user/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/template-user/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/template-user/plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/template-user/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/template-user/styles/categories_styles.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/template-user/styles/categories_responsive.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/template-user/styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/template-user/styles/responsive.css">
+    <link href="~/Content/css-js/mycss.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="~/Content/template-user/js/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/template-user/styles/bootstrap4/popper.js"></script>
+    <script src="~/Content/template-user/styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="~/Content/template-user/plugins/Isotope/isotope.pkgd.min.js"></script>
+    <script src="~/Content/template-user/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <script src="~/Content/template-user/plugins/easing/easing.js"></script>
+    <script src="~/Content/template-user/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="~/Content/template-user/js/categories_custom.js"></script>
+    <script src="~/Content/template-user/js/custom.js"></script>
+    <script src="~/Content/template-user/js/single_custom.js"></script>
+    <script src="~/Content/css-js/myjs.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+</head>
+
+<body>
+    <div class="super_container">
+        <!-- Header -->
+        <header class="header trans_300" style="top: 0px;">
+            <!-- Top Navigation -->
+            <div class="top_nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="top_nav_left">free shipping all orders!</div>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <div class="top_nav_right">
+                                <ul class="top_nav_menu">
+                                    <li class="account">
+                                        @if (Session["MaKH"] != null)
+                                        {
+                                            if (Session["Images"] != null && Session["Images"].ToString() != "avt-user.png")
+                                            {
+                                                <div style="display: flex; align-items: center">
+                                                    <div class="image-link">
+                                                        <img src="~/Uploads/images_users/@Session["Images"].ToString().Trim()" alt="@Session["Images"].ToString().Trim()" style="width: 40px; height: 40px; border-radius: 50%;margin-top:5px">
+                                                    </div>
+                                                    <i class="fa fa-angle-down" style="color:white;margin-top:20px;margin-left:5px"></i>
+                                                </div>
+
+                                            }
+                                            else
+                                            {
+                                                <div style="display: flex; align-items: center">
+                                                    <div class="image-link">
+                                                        <img src="~/Content/template-user/images/avt-user.png" alt="avt-user.png" style="width: 40px; height: 40px; border-radius: 50%;margin-top:5px;color:white">
+                                                    </div>
+                                                    <i class="fa fa-angle-down" style="color:white;margin-top:20px;margin-left:5px"></i>
+                                                </div> }
+
+
+                                        }
+                                        else
+                                        {
+                                            <a href="#">Tài khoản<i class="fa fa-angle-down"></i></a>
+                                        }
+
+                                        <ul class="account_selection" style="width: 200px; border-radius: 5%">
+                                            @if (Session["MaKH"] != null)
+                                            {
+                                                if (Session["Images"] != null && Session["Images"].ToString() != "avt-user.png")
+                                                {
+
+                                                    <li>
+                                                        <a data-fancybox="gallery" href="~/Uploads/images_users/@Session["Images"].ToString().Trim()" data-caption="Ảnh đại diện" style="display: flex; align-items: center;">
+                                                            <img src="~/Uploads/images_users/@Session["Images"].ToString().Trim()" alt="@Session["Images"].ToString().Trim()" style="width: 60px; height: 60px; border-radius: 50%; margin: 10px; margin-right: 15px;">
+                                                            <span style="display: flex; flex-direction: column; justify-content: space-between;">
+                                                                <span style="font-weight: 600; margin-bottom: -25px; font-size: 15px">@Session["HoTen"]</span>
+                                                                <span style="font-weight: 600; font-size: 14px">@ViewBag.TongDiem  <image src="~/Content/template-user/images/star.png" style="width:20px"></image></span>
+                                                            </span>
+                                                        </a>
+
+                                                    </li>
+                                                }
+                                                else
+                                                {
+                                                    <li>
+                                                        <a data-fancybox="user-gallery" href="~/Content/template-user/images/avt-user.png" data-caption="Chưa có ảnh" style="display: flex; align-items: center;">
+                                                            <img src="~/Content/template-user/images/avt-user.png" class="rounded-circle" alt="User" style="width: 50px; height: 50px;border-radius: 50%;margin-left:5px;margin:10px">
+                                                            <span style="display: flex; flex-direction: column; justify-content: space-between;">
+                                                                <span style="font-weight: 600; margin-bottom: -25px; font-size: 15px">@Session["HoTen"]</span>
+                                                                <span style="font-weight: 600; font-size: 14px">@ViewBag.TongDiem  <image src="~/Content/template-user/images/star.png" style="width:20px"></image></span>
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                }
+
+                                                <li><a href="@Url.Action("IndexUser","User")"><i class="fas fa-user-alt" aria-hidden="true"></i>Thông tin</a></li>
+                                                <li><a href="@Url.Action("IndexOrderUser","OrderUser")"><i class="fas fa-file-invoice-dollar" aria-hidden="true"></i>Đơn mua</a></li>
+                                                <li><a href="@Url.Action("IndexFAV","FavoriteProduct")"><i class="fas fa-heart" aria-hidden="true"></i>Yêu thích</a></li>
+                                                <li>
+                                                    <div class="dropdown">
+                                                        <a class="dropdown-toggle" href="#" role="button" id="voucherDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="fas fa-gift" aria-hidden="true"></i> Voucher
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="voucherDropdown">
+                                                            <a class="dropdown-item" href="@Url.Action("IndexCustomerCode", "CustomerDiscount")"> <i class="fas fa-ticket-alt"></i> Đổi Voucher</a>
+                                                            <a class="dropdown-item" href="@Url.Action("MyVoucher", "CustomerDiscount")"> <i class="fa fa-gift"></i> Voucher của tôi</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li><a href="@Url.Action("Logout","Login")"><i class="fas fa-sign-out-alt" aria-hidden="true"></i>Đăng xuất</a></li>
+                                            }
+
+                                            else
+                                            {
+                                                <li><a href="@Url.Action("Login","Login")"><i class="fas fa-sign-in-alt" aria-hidden="true"></i>Đăng nhập</a></li>
+                                                <li><a href="@Url.Action("Register","Login")"><i class="fa fa-user-plus" aria-hidden="true"></i>Đăng ký</a></li>
+                                            }
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Navigation -->
+            <div class="main_nav_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-right">
+                            <div class="logo_container">
+                                <a href="@Url.Action("IndexHome","Home")">Electro<span>shop</span></a>
+                            </div>
+                            <nav class="navbar">
+                                <ul class="navbar_menu">
+                                    <li class="dropdown"> @Html.Action("MenuTop", "Menu")</li>
+                                    @if (Session["MaKH"] != null)
+                                    {
+                                        <li><a href="@Url.Action("ContactCustomer", "Contact")">Liên hệ</a></li>
+                                    }
+                                    else
+                                    {
+                                        <li><a href="@Url.Action("Contact", "Contact")">Liên hệ</a></li>
+                                    }
+                                </ul>
+
+                                <ul class="navbar_user">
+                                    <li class="checkout">
+                                        <a href="@Url.Action("IndexShoppingCart","ShoppingCart")">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            <span id="checkout_items" class="checkout_items"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="hamburger_container">
+                                    <i class="fa fa-bars" aria-hidden="true"></i>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="fs_menu_overlay"></div>
+        <div class="hamburger_menu">
+            <div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <div class="hamburger_menu_content text-right">
+                <ul class="menu_top_nav">
+                    <li class="menu_item has-children">
+                        <a href="#">
+                            My Account
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="menu_selection">
+                            <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+                            <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_item"><a href="#">home</a></li>
+                    <li class="menu_item"><a href="#">shop</a></li>
+                    <li class="menu_item"><a href="#">promotion</a></li>
+                    <li class="menu_item"><a href="#">pages</a></li>
+                    <li class="menu_item"><a href="#">blog</a></li>
+                    <li class="menu_item"><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </div>
+        @RenderBody()
+        <!-- Benefit -->
+        <div class="benefit">
+            <div class="container">
+                <div class="row benefit_row">
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+                            <div class="benefit_content">
+                                <h6>free shipping</h6>
+                                <p>Suffered Alteration in Some Form</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+                            <div class="benefit_content">
+                                <h6>cach on delivery</h6>
+                                <p>The Internet Tend To Repeat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon"><i class="fa fa-undo" aria-hidden="true"></i></div>
+                            <div class="benefit_content">
+                                <h6>45 days return</h6>
+                                <p>Making it Look Like Readable</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 benefit_col">
+                        <div class="benefit_item d-flex flex-row align-items-center">
+                            <div class="benefit_icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                            <div class="benefit_content">
+                                <h6>opening all week</h6>
+                                <p>8AM - 09PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter -->
+        <div class="newsletter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
+                            <h4>Newsletter</h4>
+                            <p>Subscribe to our newsletter and get 20% off your first purchase</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form action="post">
+                            <div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column align-items-center justify-content-lg-end justify-content-center">
+                                <input id="newsletter_email" type="email" placeholder="Your email" required="required" data-error="Valid email is required.">
+                                <button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300" value="Submit">subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="footer_nav_container d-flex flex-sm-row flex-column align-items-center justify-content-lg-start justify-content-center text-center">
+                            <ul class="footer_nav">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer_social d-flex flex-row align-items-center justify-content-lg-end justify-content-center">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer_nav_container">
+                            <div class="cr">©2018 All Rights Reserverd. Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">Colorlib</a> &amp; distributed by <a href="https://themewagon.com">ThemeWagon</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

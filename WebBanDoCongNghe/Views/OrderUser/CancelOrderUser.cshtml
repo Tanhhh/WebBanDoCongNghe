@@ -1,0 +1,71 @@
+﻿@model PagedList.PagedList<WebBanDoCongNghe.Models.tb_Order>
+@using PagedList.Mvc;
+
+<div class="card-body">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="text-center">STT</th>
+                <th class="text-center">Mã đơn hàng</th>
+                <th class="text-center">Tổng tiền</th>
+                <th class="text-center">Thời gian đặt hàng</th>
+                <th class="text-center">Thời gian hủy đơn</th>
+                <th class="text-center">Số điểm trừ</th>
+                <th class="text-center">Chi tiết</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                var i = 1;
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-center">@i</td>
+                        <td class="text-center">@item.MaDonHang</td>
+                        <td class="text-center">@String.Format("{0:0,0}", @item.TotalPayment) VDN</td>
+                        <td class="text-center">@String.Format("{0:dd/MM/yyyy - hh:mm:ss tt}", @item.CreateDate)</td>
+                        <td class="text-center">@String.Format("{0:dd/MM/yyyy - hh:mm:ss tt}", @item.UpdatedDate)</td>
+                        @{
+                            int soDiemTru = (int)(item.TotalPayment / 5000000);
+                        }
+                        <td class="text-center">@soDiemTru</td>
+                        <td class="text-center">
+                            <a href="/OrderUser/OrderUserDetail/@item.MaDonHang" class="btn btn-sm btn-success">Xem</a>
+                        </td>
+                    </tr>
+                    i++;
+                }
+
+            }
+            else
+            {
+                <tr>
+                    <td colspan="12">Không có đơn hàng nào!</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@if (Model != null && Model.Any())
+{
+    @*tạo link liên kết phân trang*@
+    <div class="row justify-content-end">
+        <ul class="pagination">
+            <li class="page-item @(Model.PageNumber == 1 ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("IndexOrderUser", new { page = Model.PageNumber - 1 })">Trước</a>
+            </li>
+            @for (int i = 1; i <= Model.PageCount; i++)
+            {
+                <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("IndexOrderUser", new { page = i })">@i</a>
+                </li>
+            }
+            <li class="page-item @(Model.PageNumber == Model.PageCount ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("IndexOrderUser", new { page = Model.PageNumber + 1 })">Sau</a>
+            </li>
+        </ul>
+    </div>
+}
+
+

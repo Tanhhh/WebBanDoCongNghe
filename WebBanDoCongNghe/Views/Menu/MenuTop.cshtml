@@ -1,0 +1,14 @@
+﻿@model IEnumerable<WebBanDoCongNghe.Models.tb_Category>
+
+
+@if (Model != null && Model.Any())
+{
+
+    foreach (var item in Model)
+    {
+        <li><a href="/@item.Link">@item.TenDanhMuc</a></li>
+    }
+    
+}
+
+

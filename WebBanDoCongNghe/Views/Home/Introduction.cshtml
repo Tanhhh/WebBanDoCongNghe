@@ -1,0 +1,87 @@
+﻿@model object
+
+@{
+    ViewBag.Title = "Introduction";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/introducepage.css" rel="stylesheet" />
+
+
+<div class="slide">
+    <img class="slideshow" src="~/Content/template-user/images/zyro-image.png" />
+</div>
+
+<section class="introduce">
+    <aside class="introduce-column1">
+        <h1>GIỚI THIỆU</h1>
+        <p >Electroshop là nơi bạn có thể trải nghiệm sự đa dạng và tiện lợi trong việc mua sắm các sản phẩm công nghệ hàng đầu.Chúng tôi tự hào cung cấp những sản phẩm chất lượng cao và dịch vụ tận tâm để đáp ứng mọi nhu cầu của khách hàng.Hãy khám phá các danh mục sản phẩm đa dạng và thú vị của chúng tôi và tận hưởng trải nghiệm mua sắm trực tuyến tuyệt vời!</p>
+        <p style="text-align:">Xin cảm ơn bạn đã ghé thăm Electroshop.</p>
+    </aside>
+    <div class="introduce-column2">
+        <div class="img-introduce"><img src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/154289/Originals/bang-gia-oppo-2023-2.jpg" /></div>
+        <div class="img-introduce"><img src="https://24hstore.vn/images/news/2021/01/08/original/topdt2021_avatar_1610080843.jpg" /></div>
+        <div class="img-introduce"><img src="https://cdn.tgdd.vn/Files/2019/10/01/1203682/bg_1_1280x720-800-resize.jpg" /></div>
+        <div class="img-introduce"><img src="https://cdn.tgdd.vn/Files/2022/01/17/1411286/tai-nghe-numbia-tgdd-1-2-thumb-1_1280x720-800-resize.jpg" /></div>
+    </div>
+</section>
+<div class="introduce-column3">
+    <div class="img-introduce"><img src="https://innovativehub.com.vn/wp-content/uploads/2021/10/nha-cung-cap-dich-vu-tmdt.jpg"  /></div>
+   
+</div>
+
+
+<br />
+<h2 style="color:white;font-size:22px;text-align:center;padding:0;overflow-wrap:normal;">Tại ElectroShop, sự kiện của bạn dẫn đầu xu hướng và lưu lại dấu ấn đỉnh cao cho từng thực khách trải nghiệm.</h2>
+<br />
+<div class="directory">
+    <div style="background-image: url('https://www.anphatpc.com.vn/media/news/0901_laptop5.jpg') " onClick='redirectOnClick()'>
+        <p style="padding:1px;">LAPTOP</p>
+    </div>
+    <div style="background-image: url('https://news.khangz.com/wp-content/uploads/2022/08/dien-thoai-thiet-ke-kim-loai-nguyen-khoi-5.jpg') " onClick='redirectOnClick()'>
+        <p style="padding:1px;">MOBILE PHONE</p><br />
+    </div>
+    <div style="background-image: url('https://images.prom.ua/3727709133_w640_h640_zaschitnyj-chehol-nakladka.jpg') " onClick='redirectOnClick()'>
+        <p style="padding:1px;">AIRPOD</p><br />
+    </div>
+    <div style="background-image: url('https://cdn.tgdd.vn/Products/Images/54/76061/tai-nghe-earpods-apple-md827fea-7-600x600.jpg') " onClick='redirectOnClick()'>
+        <p style="padding:1px;">HEARPHONE</p><br />
+    </div>
+
+    <script>
+        function redirectOnClick() {
+            document.location = '/san-pham';
+        }
+
+    </script>
+
+
+</div>
+<br />
+<br />
+<br />
+
+<script>
+
+
+    function timers() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+
+        m = checkTime(m);
+
+        s = checkTime(s);
+
+        document.getElementById('timer').innerHTML = h + ":" + m + ":" + s;
+        setTimeout(timers, 200);
+    }
+    function checkTime(i) {
+        if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+        return i;
+    }
+</script>
+
+
+
+

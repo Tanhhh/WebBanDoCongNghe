@@ -1,0 +1,29 @@
+#phantrang {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:0 20px 0 20px;
+}
+
+    #phantrang li {
+        padding: 0px 5px;
+    }
+.switch {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 25.2px;
+    line-height: 1.57rem;
+    font-weight: bold;
+    background-color: #0287D0;
+    overflow: hidden;
+    display: inline-block;
+    padding: 0.75em 0.25em;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 3px;
+    -moz-background-clip: padding;
+    border-radius: 3px;
+    background-clip: padding-box;
+    position: relative;
+}

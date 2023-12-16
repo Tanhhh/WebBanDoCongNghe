@@ -1,0 +1,29 @@
+﻿@model IEnumerable<WebBanDoCongNghe.Models.tb_ChiTietOrder>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="text-center">STT</th>
+            <th>Tên sản phẩm</th>
+            <th class="text-center">Giá sản phẩm</th>
+            <th class="text-center">Số lượng</th>
+            <th class="text-center">Thành tiền</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            var i = 1;
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">@i</td>
+                    <td class="col-md-5">@item.tb_Product.TenSanPham</td>
+                    <td class="text-center">@String.Format("{0:0,0}", @item.Price) VDN</td>
+                    <td class="text-center">@item.Quantity</td>
+                    <td class="text-center">@String.Format("{0:0,0}", (@item.Price * item.Quantity)) VDN</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

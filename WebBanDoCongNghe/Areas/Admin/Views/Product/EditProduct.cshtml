@@ -1,0 +1,265 @@
+﻿@model WebBanDoCongNghe.Models.tb_Product
+@{
+    ViewBag.Title = "EditProduct";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+@section naviheader{
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/Admin/Home/Index" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/Admin/Product/IndexProduct" class="nav-link">Danh sách sản phẩm</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Cập nhật</a>
+        </li>
+    </ul>
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Cập nhật sản phẩm</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/Admin/Product/IndexProduct">Danh sách sản phẩm</a></li>
+                    <li class="breadcrumb-item active">Cập nhật</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<!-- Main content -->
+<section class="content">
+    <!-- Default box -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-default">
+                <div class="card-header">
+                    <h3 class="card-title">Thông tin sản phẩm mới</h3>
+                </div>
+                <div class="card-body">
+                    <div class="bs-stepper linear">
+                        <div class="bs-stepper-content">
+                            @using (Html.BeginForm("EditProduct", "Product", FormMethod.Post, new { }))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.ValidationSummary(true)
+                                @Html.HiddenFor(x => x.MaSanPham)
+                                <!-- your steps content here -->
+                                <div class="card">
+                                    <!--.card-header -->
+                                    <div class="card-header p-2">
+                                        <ul class="nav nav-pills">
+                                            <li class="nav-item"><a class="nav-link active" href="#information" data-toggle="tab">Thông tin chung</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#settings" data-toggle="tab">SEO</a></li>
+                                        </ul>
+                                    </div>
+                                    <!--/.card-header -->
+                                    <!--.card-body -->
+                                    <div class="card-body">
+                                        <!--.tab-content -->
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="information">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="TenBrand">Hiển thị</label>
+                                                            @Html.DropDownListFor(model => model.IsActive, new[] { new SelectListItem { Value = "true", Text = "Hiển thị" }, new SelectListItem { Value = "false", Text = "Không hiển thị" } }, new { @class = "form-control" })
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="TenBrand">Hết hàng</label>
+                                                            @Html.DropDownListFor(model => model.IsSoldOut, new[] { new SelectListItem { Value = "false", Text = "Còn hàng", }, new SelectListItem { Value = "true", Text = "Hết hàng" } }, new { @class = "form-control" })
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="TenBrand">Giảm giá</label>
+                                                            @Html.DropDownListFor(model => model.IsSale, new[] { new SelectListItem { Value = "true", Text = "Giảm giá" }, new SelectListItem { Value = "false", Text = "Không giảm giá" } }, new { @class = "form-control" })
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="TenBrand">Sản phẩm mới</label>
+                                                            @Html.DropDownListFor(model => model.IsNew, new[] { new SelectListItem { Value = "true", Text = "Sản phẩm mới" }, new SelectListItem { Value = "false", Text = "Sản phẩm không mới" } }, new { @class = "form-control" })
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="TenBrand">Sản phẩm nổi bật</label>
+                                                            @Html.DropDownListFor(model => model.IsHot, new[] { new SelectListItem { Value = "true", Text = "Sản phẩm nổi bật" }, new SelectListItem { Value = "false", Text = "Sản phẩm không nổi bật " } }, new { @class = "form-control" })
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="TenBrand">Tên sản phẩm</label>
+                                                    @Html.TextBoxFor(x => x.TenSanPham, new { @class = "form-control" })
+                                                    @Html.ValidationMessageFor(x => x.TenSanPham, null, new { @class = "text-danger" })
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Description">Mô tả</label>
+                                                    @Html.TextAreaFor(x => x.Description, new { @class = "form-control" })
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Description">Chi tiết</label>
+                                                    @Html.TextAreaFor(x => x.Detail, new { @class = "form-control", @id = "txtDetail" })
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="exampleInputFile">Danh mục sản phẩm</label>
+                                                            <div class="input-group">
+                                                                <div class="custom-file col-9">
+                                                                    @Html.DropDownListFor(x => x.MaProductCategory, ViewBag.ProductCategory as SelectList, "-Chọn danh mục sản phẩm", new { @class = "form-control" })
+                                                                    @Html.ValidationMessageFor(x => x.MaProductCategory, null, new { @class = "text-danger" })
+                                                                </div>
+                                                                <div>
+                                                                    <a href="/Admin/ProductCategory/IndexProductCategory" target="_bank" class="btn btn-primary">Danh mục sản phẩm</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="exampleInputFile">Thương hiệu</label>
+                                                            <div class="input-group">
+                                                                <div class="custom-file col-9">
+                                                                    @Html.DropDownListFor(x => x.MaBrand, ViewBag.Brand as SelectList, "-Chọn tên thương hiệu", new { @class = "form-control" })
+                                                                    @Html.ValidationMessageFor(x => x.MaBrand, null, new { @class = "text-danger" })
+                                                                </div>
+                                                                <div>
+                                                                    <a href="/Admin/Brand/IndexBrand" target="_bank" class="btn btn-primary">Danh sách thương hiệu</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="exampleInputFile">Màu sắc</label>
+                                                            <div class="input-group">
+                                                                <div class="custom-file col-9">
+                                                                    @Html.DropDownListFor(x => x.MaColor, ViewBag.Color as SelectList, "-Chọn màu sắc", new { @class = "form-control" })
+                                                                    @Html.ValidationMessageFor(x => x.MaColor, null, new { @class = "text-danger" })
+                                                                </div>
+                                                                <div>
+                                                                    <a href="/Admin/Color/IndexColor" target="_bank" class="btn btn-primary">Danh sách màu sắc</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="exampleInputFile">Bộ nhớ</label>
+                                                            <div class="input-group">
+                                                                <div class="custom-file col-9">
+                                                                    @Html.DropDownListFor(x => x.MaMemory, ViewBag.Memory as SelectList, "-Chọn bộ nhớ", new { @class = "form-control" })
+                                                                    @Html.ValidationMessageFor(x => x.MaMemory, null, new { @class = "text-danger" })
+                                                                </div>
+                                                                <div>
+                                                                    <a href="/Admin/Memory/IndexMemory" target="_bank" class="btn btn-primary">Danh sách bộ nhớ</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="TenBrand">số lượng</label>
+                                                            @Html.TextBoxFor(x => x.Quantity, new { @class = "form-control" })
+                                                            @Html.ValidationMessageFor(x => x.Quantity, null, new { @class = "text-danger" })
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="TenBrand">Giá bán</label>
+                                                            @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+                                                            @Html.ValidationMessageFor(x => x.Price, null, new { @class = "text-danger" })
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <label for="TenBrand">Giá khuyến mãi</label>
+                                                            @Html.TextBoxFor(x => x.PriceSale, new { @class = "form-control" })
+                                                            @Html.ValidationMessageFor(x => x.PriceSale, null, new { @class = "text-danger" })
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="form-group">
+                                                        <a href="/Admin/Product/IndexProduct" class="btn btn-danger">Quay lại</a>
+                                                        <button type="submit" class="btn btn-primary">Cập nhật</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="settings">
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label for="TenBrand">SEO Title</label>
+                                                        @Html.TextBoxFor(x => x.SeoTitle, new { @class = "form-control" })
+                                                        @Html.ValidationMessageFor(x => x.SeoTitle, null, new { @class = "text-danger" })
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="TenBrand">SEO key words</label>
+                                                        @Html.TextBoxFor(x => x.SeoKeywords, new { @class = "form-control" })
+                                                        @Html.ValidationMessageFor(x => x.SeoKeywords, null, new { @class = "text-danger" })
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="TenBrand">SEO Description</label>
+                                                        @Html.TextAreaFor(x => x.SeoDescription, new { @class = "form-control" })
+                                                        @Html.ValidationMessageFor(x => x.SeoDescription, null, new { @class = "text-danger" })
+                                                    </div>
+                                                </form>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/.tab-content -->
+                                </div>
+                                <!--/.card-body -->
+                            }
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+    </div>
+</section>
+<!-- /.content -->
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            CKEDITOR.replace('txtDetail', {
+                customConfig: '/content/ckeditor/config.js',
+                extraAllowedContent:'span',
+            });
+        });
+        function BrowseSever(field) {
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (fileUrl) {
+                addImageProduct(fileUrl);
+            };
+            finder.popup();
+        }
+    </script>
+}
+
+
+

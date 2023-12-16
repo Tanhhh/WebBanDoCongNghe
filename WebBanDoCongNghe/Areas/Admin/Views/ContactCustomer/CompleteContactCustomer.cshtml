@@ -1,0 +1,57 @@
+﻿@model PagedList.PagedList<WebBanDoCongNghe.Models.tb_Contact>
+@using PagedList.Mvc;
+
+<div class="card-body">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th class="text-center">STT</th>
+                <th class="text-center">Tài khoản</th>
+                <th class="text-center">Ngày hoàn thành</th>
+                <th class="text-center">Nhân viên xử lý</th>
+                <th class="text-center">Chi tiết</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                var i = 1;
+                foreach (var item in Model)
+                {
+            <tr>
+                <td class="text-center">@i</td>
+                <td class="text-center">@item.tb_Customer.TaiKhoan</td>
+                <td class="text-center">@item.UpdatedDate</td>
+                <td class="text-center">@item.tb_NhanVien.TenNhanVien</td>
+                <td class="text-center">
+                    <a href="/Admin/ContactCustomer/ContactCustomerDetail/@item.ContactID" class="btn btn-sm btn-primary">Chọn</a>
+                </td>
+            </tr>
+                    i++;
+                }
+
+            }
+            else
+            {
+                <tr>
+                    <td colspan="12">Không có liên hệ nào!</td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
+@*tạo link liên kết phân trang*@
+<div id="phantrang">
+    <div>
+        Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+    </div>
+    <div id="phantrang-SoThuTu">
+        @Html.PagedListPager(Model, page => Url.Action("IndexContactCustomer", new { page = page }))
+    </div>
+</div>
+
+
+
+

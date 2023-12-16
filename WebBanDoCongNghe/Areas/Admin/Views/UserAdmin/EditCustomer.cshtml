@@ -1,0 +1,88 @@
+﻿@model WebBanDoCongNghe.Models.tb_Customer
+@{
+    ViewBag.Title = "EditCustomer";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+
+@section naviheader{
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/Admin/Home/Index" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/Admin/UserAdmin/Customer" class="nav-link">Danh sách khách hàng</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Cập nhật</a>
+        </li>
+    </ul>
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Cập nhật khách hàng</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/Admin/UserAdmin/Customer">Danh sách khách hàng</a></li>
+                    <li class="breadcrumb-item active">Cập nhật</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<!-- Main content -->
+<section class="content">
+    <!-- Default box -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-default">
+                <div class="card-header">
+                    <h3 class="card-title">Thông tin khách hàng</h3>
+                </div>
+                <div class="card-body">
+                    <div class="bs-stepper linear">
+                        <div class="bs-stepper-content">
+                            @using (Html.BeginForm("EditCustomer", "UserAdmin", FormMethod.Post, new { }))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.ValidationSummary(true)
+                                @Html.HiddenFor(x => x.MaKH)
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="TenBrand">Kích hoạt</label>
+                                            @Html.DropDownListFor(model => model.IsActive, new[] { new SelectListItem { Value = "true", Text = "Kích hoạt" }, new SelectListItem { Value = "false", Text = "khóa tài khoản" } }, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group text-right">
+                                    <a href="/Admin/Product/IndexProduct" class="btn btn-danger">Quay lại</a>
+                                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+

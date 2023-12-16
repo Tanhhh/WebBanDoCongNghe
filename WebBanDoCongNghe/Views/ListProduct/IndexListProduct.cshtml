@@ -1,0 +1,275 @@
+﻿@model IEnumerable<WebBanDoCongNghe.Models.tb_Product>
+
+@{
+    ViewBag.Title = "ListProductIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+@*CSS SearchBar*@
+<style>
+
+    .wrapper {
+        width: 100%;
+        max-width: 31.25rem;
+        margin: 6rem auto;
+    }
+
+    .label {
+        font-size: .625rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: +1.3px;
+        margin-bottom: 1rem;
+    }
+
+    .searchBar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #searchQueryInput {
+        width: 100%;
+        height: 2.8rem;
+        background: #f5f5f5;
+        outline: none;
+        border: none;
+        border-radius: 1.625rem;
+        padding: 0 3.5rem 0 1.5rem;
+        font-size: 1rem;
+    }
+
+    #searchQuerySubmit {
+        width: 3.5rem;
+        height: 2.8rem;
+        margin-left: -3.5rem;
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+        #searchQuerySubmit:hover {
+            cursor: pointer;
+        }
+</style>
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+
+            <!-- Breadcrumbs -->
+
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="@Url.Action("IndexHome", "Home")">Trang chủ</a></li>
+                    <li class="active"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Sản Phẩm</a></li>
+                </ul>
+            </div>
+
+            <!-- Sidebar -->
+
+            <div class="sidebar">
+                <div class="sidebar_section">
+                    <div class="sidebar_title">
+                        <h5>Product Category</h5>
+                    </div>
+                    <ul class="sidebar_categories">
+
+                        @Html.Action("MenuCategoryListProduct", "ListProduct", new { MaProductCategory = ViewBag.cateId })
+
+
+                    </ul>
+                </div>
+
+                <!-- Price Range Filtering -->
+                <div class="sidebar_section">
+                    <div class="sidebar_title">
+                        <h5>Filter by Price</h5>
+                    </div>
+                    <p>
+                        <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+
+                    </p>
+                    <div id="slider-range"></div>
+                    <div class="filter_button"><span>filter</span></div>
+                </div>
+
+                <div class="sidebar_section">
+                    <div class="sidebar_title">
+                        <h5>Product Brand</h5>
+                    </div>
+                    <ul class="sidebar_categories">
+                        @Html.Action("MenuBrandListProduct", "ListProduct", new { MaBrand = ViewBag.cateId })
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+
+            <div class="main_content">
+
+                <!-- Products -->
+
+                <div class="products_iso">
+                    <div class="row">
+                        <div class="col">
+
+                            <!-- Product Sorting -->
+
+                            <div class="product_sorting_container product_sorting_container_top">
+                                <ul class="product_sorting">
+                                    <li>
+                                        <span class="type_sorting_text">Default Sorting</span>
+                                        <i class="fa fa-angle-down"></i>
+                                        <ul class="sorting_type">
+                                            <li class="type_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>Default Sorting</span></li>
+                                            <li class="type_sorting_btn" data-isotope-option='{ "sortBy": "price" }'><span>Price</span></li>
+                                            <li class="type_sorting_btn" data-isotope-option='{ "sortBy": "name" }'><span>Product Name</span></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <span>Show</span>
+                                        <span class="num_sorting_text">6</span>
+                                        <i class="fa fa-angle-down"></i>
+                                        <ul class="sorting_num">
+                                            <li class="num_sorting_btn"><span>6</span></li>
+                                            <li class="num_sorting_btn"><span>12</span></li>
+                                            <li class="num_sorting_btn"><span>24</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="product_sorting">
+                                    @using (Html.BeginForm("KetQuaTimKiem", "Search", FormMethod.Post))
+                                    {
+                                        <div class="searchBar">
+                                            <input id="searchQueryInput" type="text" name="InputTimKiem" placeholder="Search" value="" />
+                                            <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+
+                            <!-- Product Grid -->
+
+                            <div class="product-grid">
+
+
+                                @if (Model != null && Model.Any())
+                                {
+
+                                    foreach (var item in Model)
+                                    {
+                                        var strImage = "";
+                                        var image = item.tb_ProductImages.FirstOrDefault(n => n.IsDefault == true);
+                                        if (image != null)
+                                        {
+                                            strImage = image.Image;
+                                        }
+                                        if (item.Quantity > 0)
+                                        {
+                                            <div class="product-item @item.tb_ProductCategory.Link">
+                                                <div class="product discount product_filter">
+                                                    <div style="min-height:240px;" class="product_image">
+                                                        <a href="/chi-tiet/@item.Link-p@(item.MaSanPham)"><img src="@strImage" alt="@item.TenSanPham"></a>
+                                                    </div>
+                                                    @if (item.IsSale == true)
+                                                    {
+                                                        <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>Sale</span></div>
+                                                    }
+                                                    <div class="product_info">
+                                                        <h6 style="margin-top:20px !important;" class="product_name"><a href="/chi-tiet/@item.Link-p@(item.MaSanPham)">@item.TenSanPham</a></h6>
+                                                        @if (item.IsSale == true)
+                                                        {
+                                                            <div class="product_price">@String.Format("{0:0,0}", @item.PriceSale) VND</div>
+                                                            <div class="product_price"><span style="margin:0">@String.Format("{0:0,0}", @item.Price) VND</span></div>
+                                                            <div style="display:none" class="in_product_price"> @item.PriceSale</div>
+                                                        }
+                                                        @if (item.IsSale == false || item.IsSale == null)
+                                                        {
+                                                            <div class="product_price">@String.Format("{0:0,0}", @item.Price) VND</div>
+                                                            <div style="display:none" class="in_product_price"> @item.Price</div>
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <div class="red_button add_to_cart_button"><a href="#" class="btnAddToCart" data-id="@item.MaSanPham">add to cart</a></div>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="product-item out-of-stock">
+                                                <div class="product discount product_filter">
+                                                    <div style="min-height:240px;" class="product_image">
+                                                        <a href="/chi-tiet/@item.Link-p@(item.MaSanPham)"><img src="@strImage" alt="@item.TenSanPham"></a>
+                                                    </div>
+                                                    <div class="product_info">
+                                                        <h6 style="margin-top:20px !important;" class="product_name"><a href="/chi-tiet/@item.Link-p@(item.MaSanPham)">@item.TenSanPham</a></h6>
+                                                        <div class="product_price out_of_stock">HẾT HÀNG</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    <h5> Không có sản phẩm! </h5>
+                                }
+                            </div>
+                            @*Product Sorting-- >*@
+
+                            <div class="product_sorting_container product_sorting_container_bottom clearfix">
+                                <ul class="product_sorting">
+                                    <li>
+                                        <span>Show:</span>
+                                        <span class="num_sorting_text">04</span>
+                                        <i class="fa fa-angle-down"></i>
+                                        <ul class="sorting_num">
+                                            <li class="num_sorting_btn"><span>01</span></li>
+                                            <li class="num_sorting_btn"><span>02</span></li>
+                                            <li class="num_sorting_btn"><span>03</span></li>
+                                            <li class="num_sorting_btn"><span>04</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        initPriceSlider();
+    });
+</script>
+<style>
+    .out-of-stock {
+        opacity: 0.6; /* Làm mờ sản phẩm hết hàng */
+    }
+
+    .out-of-stock-image {
+        filter: grayscale(100%) blur(1px); /* Chuyển ảnh sang trắng đen và thêm hiệu ứng mờ */
+        transition: filter 0.3s ease;
+    }
+
+    .out-of-stock-name {
+        color: #888; /* Màu chữ cho sản phẩm hết hàng */
+    }
+
+    .out-of-stock-link {
+        color: #888; /* Màu chữ cho link sản phẩm hết hàng */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .out-of-stock-link:hover {
+            color: #666; /* Màu chữ khi di chuột qua link */
+        }
+</style>

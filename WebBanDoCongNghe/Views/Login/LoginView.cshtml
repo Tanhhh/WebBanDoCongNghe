@@ -1,0 +1,46 @@
+﻿@model WebBanDoCongNghe.Models.tb_Customer
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { id = "loginForm", data_ajax = "true", data_ajax_complete = "submitLoginForm" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-group">
+                        <label for="TaiKhoan">Tài khoản</label>
+                        @Html.TextBoxFor(x => x.TaiKhoan, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.TaiKhoan, null, new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label for="MatKhau">Mật khẩu</label>
+                        @Html.PasswordFor(x => x.MatKhau, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.MatKhau, null, new { @class = "text-danger" })
+                    </div>
+                    <div class="col text-center">
+                        <input style="margin-top:25px;" type="submit" value="Đăng nhập" class="btn btn-success">
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* Màu mặc định cho chữ trong các ô textbox */
+    input[type="text"],
+    input[type="password"] {
+        color: black !important;
+    }
+
+    /* Màu cho chữ thông báo lỗi */
+    .field-validation-error {
+        color: red;
+    }
+</style>

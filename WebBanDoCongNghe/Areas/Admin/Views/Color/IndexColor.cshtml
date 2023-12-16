@@ -1,0 +1,176 @@
+﻿@model PagedList.PagedList<WebBanDoCongNghe.Models.tb_Color>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Màu sắc";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+@section naviheader{
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="/Admin/Home/Index" class="nav-link">Trang chủ</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">@ViewBag.Title</a>
+        </li>
+    </ul>
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Quản lý màu sắc</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/Admin/Home/Index">Home</a></li>
+                    <li class="breadcrumb-item active">@ViewBag.Title</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Danh sách màu sắc</h3>
+
+            <div class="card-tools">
+                <a href="/Admin/Color/AddColor" class="btn btn-primary">Thêm mới</a>
+                <a href="#" class="btn btn-danger" id="btnDeleteAll">Xóa</a>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="SelectAll" /></th>
+                        <th class="text-center">STT</th>
+                        <th>Hình ảnh</th>
+                        <th>Tên màu</th>
+                        <th class="text-center">Công cụ</th>
+                        <th>Thông tin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        var i = 1;
+                        foreach (var item in Model)
+                        {
+                        <tr>
+                            <td><input type="checkbox" class="cbkItem" value="@item.MaColor"/></td>
+                            <td class="text-center">@i</td>
+                            <td><img src="@item.ImageColor" width="40"/></td>
+                            <td>@item.TenColor</td>
+                            <td class="text-center">
+                                <a href="/Admin/Color/EditColor/@item.MaColor" class="btn btn-sm btn-primary">Sửa</a>
+                                <a href="#" onclick="if (confirm('Bạn có muốn xóa danh mục này không?') == true) { location.href = '/Admin/Color/DeleteColor?id=@item.MaColor' }" class="btn btn-sm btn-danger">Xóa</a>
+                            </td>
+                            <td>
+                                Cập nhật:@String.Format("{0:dd:MM:yyyy -  hh:mm:ss}", item.UpdatedDate)
+                            </td>
+                        </tr>
+                            i++;
+                        }
+
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="4">Không có bản ghi nào!</td>
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+        </div>
+        @*tạo link liên kết phân trang*@
+        <div id="phantrang">
+            <div>
+                Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+            </div>
+            <div id="phantrang-SoThuTu">
+                @Html.PagedListPager(Model, page => Url.Action("IndexColor", new { page = page }))
+            </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+
+        </div>
+        <!-- /.card-footer-->
+    </div>
+    <!-- /.card -->
+
+</section>
+<!-- /.content -->
+@section scripts{
+    <script>
+
+        $(document).ready(function () {
+            $('body').on('change', '#SelectAll', function () {
+                var checkStatus = this.checked;
+                var checkbox = $(this).parents('.card-body').find('input:checkbox');
+                checkbox.each(function () {
+                    this.checked = checkStatus;
+                    if (this.checked) {
+                        checkbox.attr('selected', 'checked');
+                    }
+                    else {
+                        checkbox.attr('selected', '');
+                    }
+                })
+            });
+
+            $('body').on('click', '#btnDeleteAll', function (e) {
+                e.preventDefault();
+                var str ="";
+                var checkbox = $(this).parents('.card').find('tr td input:checkbox');
+                var i = 0;
+                checkbox.each(function () {
+                    if (this.checked) {
+                        checkbox.attr('selected', 'checked');
+                        var _id = $(this).val();
+                        if (i === 0) {
+                            str +=  _id;
+                        }
+                        else {
+                            str += "," + _id;
+                        }
+                        i++;
+                    }
+                    else {
+                        checkbox.attr('selected', '');
+                    }
+                })
+                if (str.length > 0) {
+                    var conf = confirm("Bạn có muốn xóa những trường này hay không?");
+                    if (conf == true) {
+                        $.ajax({
+                            url: '/Admin/Color/DeleteAllColor',
+                            type: 'POST',
+                            data: { ids: str },
+                            success: function (rs) {
+                                if (rs.success) {
+                                    location.reload();
+                                }
+                            }
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+}
+
+

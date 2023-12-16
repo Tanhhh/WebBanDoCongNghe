@@ -1,0 +1,186 @@
+﻿@model PagedList.PagedList<WebBanDoCongNghe.Models.tb_Order>
+@using PagedList.Mvc;
+
+
+<div class="card-body">
+    <table class="table table-bordered table-responsive-lg">
+        <thead>
+            <tr>
+
+                <th class="text-center">STT</th>
+                <th class="text-center">Mã đơn hàng</th>
+                <th class="text-center">Tổng tiền</th>
+                <th class="text-center">Thanh toán</th>
+                <th class="text-center">Trạng thái đơn</th>
+                <th class="text-center">Thời gian đặt hàng</th>
+                <th class="text-center">Số điểm cộng</th>
+                <th class="text-center">Chi tiết</th>
+                <th class="text-center">Hủy đơn</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                var i = 1;
+                foreach (var item in Model)
+                {
+                    var thanhtoanCheck = item.IsThanhToan == true ? "<a><i class='fa fa-check text-success'></i></a>" : "<a><i class='fas fa-times text-danger'></i></a>";
+            <tr>
+
+                <td class="text-center">@i</td>
+                <td class="text-center">@item.MaDonHang</td>
+                <td class="text-center">@String.Format("{0:0,0}", @item.TotalPayment) VDN</td>
+                <td class="text-center">@Html.Raw(thanhtoanCheck)</td>
+                <td class="text-center">@item.TrangThai</td>
+                <td class="text-center">@String.Format("{0:dd/MM/yyyy - hh:mm:ss tt}", @item.CreateDate)</td>
+                @{
+                    // Tính số điểm cộng tương ứng với tổng tiền của đơn hàng
+                    int soDiemCong = (int)(item.TotalPayment / 5000000);
+                }
+                <td class="text-center">@soDiemCong</td>
+                <td class="text-center">
+                    <a href="/OrderUser/OrderUserDetail/@item.MaDonHang" class="btn btn-sm btn-success">Xem</a>
+                </td>
+                <td class="text-center">
+                    @if (item.IsXacNhan == false)
+                    {
+                        if (item.CreateDate >= DateTime.Now.AddDays(-1))
+                        {
+                            <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#cancelModal_@item.MaDonHang"> Chọn</button>
+                        }
+                        else
+                        {
+                            <span class="text-muted">Đã qua thời hạn hủy</span>
+                        }
+                    }
+                    else
+                    {
+                        <span class="text-muted">Đơn hàng đã xác nhận</span>
+
+                    }
+                </td>
+            </tr>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="cancelModal_@item.MaDonHang" tabindex="-1" role="dialog" aria-labelledby="cancelModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-center">
+                                    <h5 class="modal-title">Hủy đơn hàng</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    @using (Html.BeginForm("ProcessCancelOrder", "OrderUser", FormMethod.Post, new { id = "cancelForm_" + item.MaDonHang }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        @Html.Hidden("orderId", item.MaDonHang)
+                                        <div class="form-group">
+                                            <label for="cancelReason">Lý do hủy đơn:</label>
+                                            <textarea class="form-control" id="cancelReason_@item.MaDonHang" name="cancelReason" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary d-block mx-auto">Xác nhận</button>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    i++;
+                }
+
+            }
+
+            else
+            {
+                <tr>
+                    <td colspan="12">Không có đơn hàng nào!</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+@*tạo link liên kết phân trang*@
+
+@if (Model != null && Model.Any())
+{
+    @*tạo link liên kết phân trang*@
+    <div class="row justify-content-end">
+        <ul class="pagination">
+            <li class="page-item @(Model.PageNumber == 1 ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("IndexOrderUser", new { page = Model.PageNumber - 1 })">Trước</a>
+            </li>
+            @for (int i = 1; i <= Model.PageCount; i++)
+            {
+                <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("IndexOrderUser", new { page = i })">@i</a>
+                </li>
+            }
+            <li class="page-item @(Model.PageNumber == Model.PageCount ? "disabled" : "")">
+                <a class="page-link" href="@Url.Action("IndexOrderUser", new { page = Model.PageNumber + 1 })">Sau</a>
+            </li>
+        </ul>
+    </div>
+}
+
+<!-- JavaScript -->
+
+<script>
+    function showCancelReasonForm(orderId) {
+        $("tr[id^='cancelReasonRow_']").hide();
+        $("#cancelReasonRow_" + orderId).show();
+    }
+
+    $(document).ready(function () {
+        $("form").submit(function (event) {
+            event.preventDefault();
+            var form = $(this);
+
+            var confirmCancel = confirm("Bạn có chắc chắn muốn hủy đơn hàng không?");
+            if (!confirmCancel) {
+                return;
+            }
+
+            $.ajax({
+                type: form.attr('method'),
+                url: form.attr('action'),
+                data: form.serialize(),
+                success: function (data) {
+                    if (data.success) {
+                        Toastify({
+                            text: "Đơn hàng đã được hủy thành công.",
+                            duration: 3000,
+                            close: true,
+                            gravity: "bottom",
+                            position: "right",
+                        }).showToast();
+
+                        form.closest('tr').remove();
+                        form.closest('tr').hide();
+
+                        setTimeout(function () {
+                            location.reload();
+                        }, 1500);
+                    } else {
+                        Toastify({
+                            text: data.message,
+                            duration: 3000,
+                            close: true,
+                            gravity: "bottom",
+                            position: "right",
+                            backgroundColor: "red",
+                        }).showToast();
+                    }
+                }
+            });
+        });
+    });
+</script>
+<style>
+    .modal-title {
+        margin: 0 auto;
+    }
+</style>

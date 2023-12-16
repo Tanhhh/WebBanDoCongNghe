@@ -1,0 +1,16 @@
+﻿
+
+<form action="@Url.Action("SearchRevenue", "OrderCustomer")" method="post">
+    <label for="fromDate">Từ ngày:</label>
+    <input type="date" id="fromDate" name="fromDate" required>
+
+    <label for="toDate">Đến ngày:</label>
+    <input type="date" id="toDate" name="toDate" required>
+
+    <button type="submit">Tra Cứu</button>
+</form>
+
+<h2>Doanh Thu Từ @ViewBag.FromDate Đến @ViewBag.ToDate</h2>
+<p>Tổng Doanh Thu: @ViewBag.FormattedTotalRevenue VND</p>
+
+<!-- Hiển thị danh sách đơn hàng hoặc thực

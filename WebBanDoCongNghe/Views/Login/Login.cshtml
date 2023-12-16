@@ -1,0 +1,62 @@
+﻿@model WebBanDoCongNghe.Models.tb_Customer
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="@Url.Action("IndexHome", "Home")">Trang chủ</a></li>
+                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Đăng nhập</a></li>
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="row">
+                <div class="col-md-8 text-center">
+                    <h4>Đăng nhập</h4>
+                </div>
+                <div class="col-md-8 text-center" style="height:20px;">
+                    <h6 class="text-danger">@ViewBag.error</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="form-group">
+                            <label for="">Tài khoản</label>
+                            @Html.TextBoxFor(x => x.TaiKhoan, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.TaiKhoan, null, new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            <label for="">Mật khẩu</label>
+                            @Html.PasswordFor(x => x.MatKhau, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.MatKhau, null, new { @class = "text-danger" })
+                        </div>
+                        <div class="col text-center ">
+                            <input style="margin-top:25px;" type="submit" value="Đăng nhập" class="btn btn-success">
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Màu mặc định cho chữ trong các ô textbox */
+    input[type="text"], input[type="password"] {
+        color: black !important;
+    }
+
+    /* Màu cho chữ thông báo lỗi */
+    .field-validation-error {
+        color: red;
+    }
+</style>

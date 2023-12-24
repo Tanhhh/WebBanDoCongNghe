@@ -8,3 +8,7 @@ Tôi sử dụng Visual Studio để phát triển website với framework ASP.N
   B1: Create Database trong SQL Server bằng file DBQuanLyBanDoCongNghe.sql
   B2: Vào demo, trong Web.config đổi tên Data Source thành Server Name của SQL Server của mình
   B3: Chạy demo
+  
+- Trang admin: http://letuananh4282-001-site1.ctempurl.com/Admin/Home
+  + Tài khoản: phannhathao
+  + Mật khẩu: 123123

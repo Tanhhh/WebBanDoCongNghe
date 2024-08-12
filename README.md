@@ -10,5 +10,5 @@ Tôi sử dụng Visual Studio để phát triển website với framework ASP.N
   B3: Chạy demo
   
 - Trang admin: http://letuananh4282-001-site1.ctempurl.com/Admin/Home
-  + Tài khoản: phannhathao
-  + Mật khẩu: 123123
+  + Tài khoản: letuananh
+  + Mật khẩu: 123456

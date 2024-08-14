@@ -6,8 +6,7 @@ Tôi sử dụng Visual Studio để phát triển website với framework ASP.N
  
 - Đăng nhập để truy cập website:
 + Tài khoản test: 11190201
-+ Mật khẩu: 60-dayfreetrial
- 
++ Mật khẩu: 60-dayfreetrial 
 - Account:
   + Tài khoản test: letuananh
   + Mật khẩu: 123456
